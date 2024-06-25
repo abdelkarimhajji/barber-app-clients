@@ -1,13 +1,37 @@
 
 import {useNavigate} from 'react-router-dom';
 import { GiBeard } from "react-icons/gi";
+import {useEffect, useRef} from 'react'
 
 function Welcome() {
     const navigate = useNavigate();
+
+    const requestFullscreen = (element) => {
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.mozRequestFullScreen) { // Firefox
+            element.mozRequestFullScreen();
+        } else if (element.webkitRequestFullscreen) { // Chrome, Safari, Opera
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) { // IE/Edge
+            element.msRequestFullscreen();
+        }
+    };
+
+    const elementRef = useRef(null);
+
+    function handleFullscreen() {
+        
+   
+        if (elementRef.current) {
+            requestFullscreen(elementRef.current);
+        }
+    };
+            
     return (
-        <div className="bg-customBlue min-h-screen h-auto flex  justify-center pt-4 pb-4 2xl:items-center sm:pt-10 sm:pb-10 ">
+        <div  ref={elementRef} className="bg-customBlue min-h-screen h-auto flex  items-center justify-center pt-4 pb-4 2xl:items-center sm:pt-10 sm:pb-10 box-border ">
             {/* start of the container of two parts */}
-            <div className="bg-black min-h-full w-11/12 flex  2xl:w-[1300px] 2xl:h-[720px] rounded-xl">
+            <div className="bg-black min-h-full w-11/12 flex h-full 2xl:w-[1300px] lg:h-[720px] rounded-xl  box-border">
                 {/* start of the first part of left login */}
                 <div className="bg-beard bg-custom-left w-3/5 h-full hidden lg:block rounded-l-xl">
                     <div className="w-full h-full bg-transparent text-white rounded-l-xl">
@@ -26,7 +50,7 @@ function Welcome() {
                 </div>
                 {/* end of the first part of left login */}
                 {/* start of the second part of right login */}
-                <div className="bg-login w-full lg:w-2/5 h-full flex items-center justify-center flex-col text-white  sm:py-10 box-border rounded-xl lg:rounded-r-xl">
+                <div className="bg-login w-full lg:w-2/5 h-full flex items-center justify-center flex-col text-white  box-border rounded-xl lg:rounded-r-xl py-[50px]">
                     <div className="w-full flex items-center justify-center  flex-col mb-[60px] sm:mb-[100px]">
                         <div className="w-[90px] h-[90px] rounded-2xl flex items-center justify-center bg-white shadow-white mb-5">
                                 <GiBeard className="text-[75px] text-login"/>
@@ -40,6 +64,7 @@ function Welcome() {
                     <div className="flex flex-col  justify-center w-full items-center">
                         <button type="button" onClick={() => navigate("/signIn")} className=" w-11/12 xsm:w-[280px] sm:w-1/2 lg:w-[300px] h-[55px]  bg-red-800 hover:bg-red-900 transition-all rounded-xl mb-4">clients login</button>
                         <button type="button" className=" w-11/12 xsm:w-[280px]  sm:w-1/2 lg:w-[300px] h-[55px] bg-brown hover:bg-hover rounded-xl">barbers login</button>
+                        {/* <button onClick={handleFullscreen}>Go Fullscreen</button> */}
                     </div>
                 </div>
                 {/* end of the second part of right login */}

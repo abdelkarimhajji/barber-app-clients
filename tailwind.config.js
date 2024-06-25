@@ -27,6 +27,7 @@ module.exports = {
         signature: ['Pacifico', 'cursive'],
       },
       screens: {
+        '375': '375px',
         'xsm': '340px',
       },
     },
