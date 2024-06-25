@@ -38,7 +38,7 @@ function Welcome() {
                     <p className=" text-sm sm:text-base  text-center   tracking-wide text-gray mb-[20px] lg:mb-[90px]">Lorem ipsum dolor sit amet, consectetur  <br />adipiscing elit, sed do eiusmod tempor</p>
                     <button type="button" className="bg-green-800 hover:bg-green-900 transition-all py-3 rounded-xl px-5 lg:hidden mb-[40px] sm:mb-[80px] text-sm">Watch Demo</button>
                     <div className="flex flex-col  justify-center w-full items-center">
-                        <button type="button" onClick={() => navigate("login")} className=" w-11/12 xsm:w-[280px] sm:w-1/2 lg:w-[300px] h-[55px]  bg-red-800 hover:bg-red-900 transition-all rounded-xl mb-4">clients login</button>
+                        <button type="button" onClick={() => navigate("/signIn")} className=" w-11/12 xsm:w-[280px] sm:w-1/2 lg:w-[300px] h-[55px]  bg-red-800 hover:bg-red-900 transition-all rounded-xl mb-4">clients login</button>
                         <button type="button" className=" w-11/12 xsm:w-[280px]  sm:w-1/2 lg:w-[300px] h-[55px] bg-brown hover:bg-hover rounded-xl">barbers login</button>
                     </div>
                 </div>
