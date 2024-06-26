@@ -24,6 +24,7 @@ module.exports = {
         gray: '#cbcbcb',
         creatOne: '#888787',
         placeholder: '#000000AF',
+        searchBar: '#66707a',
       },
       fontFamily: {
         signature: ['Pacifico', 'cursive'],
