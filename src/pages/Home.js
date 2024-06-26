@@ -1,18 +1,14 @@
 import NavBar from "../components/NavBar";
-import beard from '../imgs/beard.jpg';
+import Ads from "../components/Ads";
 
 function Home(){
     return(
         <div className="bg-login w-full  h-[2000px] flex justify-center">
-            <div className="bg-customBlue h-full w-full lg:w-1/2 2xl:w-[800px] box-border">
+            <div className="bg-customBlue h-full w-full lg:w-[70%] 2xl:w-[1000px] box-border">
                 <NavBar />
-                <div className="w-full   overflow-y-scroll flex text-white mt-[180px] 324:mt-[160px] 480:mt-[200px] gap-x-10 px-8">
-                    <div className="flex-shrink-0  ">
-                        <img src={beard} alt=""  className="rounded-[20px]  w-[500px] h-[300px]"/>
-                    </div>
-                    <div className="flex-shrink-0">
-                        <img src={beard} alt=""  className="rounded-[20px] w-[500px] h-[300px]"/>
-                    </div>
+                <Ads />
+                <div className="w-full px-5 text-white ">
+                    <p className="font-extrabold text-xl text-green-600">Top Barbers</p>
                 </div>
             </div>
         </div>
