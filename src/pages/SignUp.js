@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
 import { GiBeard } from "react-icons/gi";
 import { IoPersonOutline } from "react-icons/io5";
 import { GoLock } from "react-icons/go";
@@ -13,6 +13,7 @@ import styles from "../styles/App.module.css";
 function SignUp() {
 
   const [showPassword, setPassword] = useState(true);
+  const navigate = useNavigate();
   return (
     <div   className="bg-customBlue min-h-screen h-full  flex  items-center justify-center pt-4 pb-4 2xl:items-center sm:pt-10 sm:pb-10 box-border ">
             {/* start of the container of two parts */}
@@ -64,7 +65,7 @@ function SignUp() {
                             }
                         </div>
                         <button type="button" className="bg-green-800 hover:bg-green-900   py-3.5 w-11/12 xsm:w-[300px] rounded-xl  transition-all mb-6">Login</button>
-                        <p className="mb-6 w-11/12 text-center">You realy have accout go to?<span className="text-green-700 font-medium"> Sign In</span></p>
+                        <p className="mb-6 w-11/12 text-center">You realy have accout go to?<span onClick={() => navigate("/signIn")} className="text-green-700 font-medium cursor-pointer hover:text-green-800"> Sign In</span></p>
                     </div>
                     
                 </div>
