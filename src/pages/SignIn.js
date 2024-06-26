@@ -33,7 +33,7 @@ function SignIn() {
                 </div>
                 {/* end of the first part of left login */}
                 {/* start of the second part of right login */}
-                <div className="bg-login w-full lg:w-2/5 md:h-full  h-auto flex items-center justify-center flex-col text-white   rounded-xl lg:rounded-r-xl py-[50px]">
+                <div className="bg-login w-full lg:w-2/5 md:h-full  h-auto flex items-center justify-center flex-col text-white   lg:rounded-none rounded-xl lg:rounded-r-xl py-[50px]">
                     <div className="w-full flex items-center justify-center  flex-col  ">
                         <div className="w-[90px] h-[90px] rounded-2xl flex items-center justify-center bg-white shadow-white mb-5">
                                 <GiBeard className="text-[75px] text-login"/>
