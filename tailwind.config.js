@@ -22,6 +22,8 @@ module.exports = {
         hover: '#503316',
         orange: '#ff7f23',
         gray: '#cbcbcb',
+        creatOne: '#888787',
+        placeholder: '#000000AF',
       },
       fontFamily: {
         signature: ['Pacifico', 'cursive'],
