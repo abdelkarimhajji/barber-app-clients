@@ -4,6 +4,8 @@ import { IoPersonOutline } from "react-icons/io5";
 import { GoLock } from "react-icons/go";
 import { AiOutlineEye } from "react-icons/ai";
 import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { GoInbox } from "react-icons/go";
+import { IoIosPhonePortrait } from "react-icons/io";
 import { useState } from "react";
 
 import styles from "../styles/App.module.css";
@@ -38,25 +40,31 @@ function SignUp() {
                         <div className="w-[90px] h-[90px] rounded-2xl flex items-center justify-center bg-white shadow-white mb-5">
                                 <GiBeard className="text-[75px] text-login"/>
                         </div>
-                        <h1 className="font-semibold font-signature tracking-widest text-2xl mb-[40px]">7ala9</h1>
-                        <h2 className="text-4xl font-semibold mb-4">Welcome back</h2>
-                        <p className="w-[300px] text-center mb-10 ">Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed do eiusmod tempor</p>
-                        <div className="flex  rounded-xl h-[50px] w-[300px] relative mb-4">
+                        <h1 className="font-semibold font-signature tracking-widest text-2xl mb-[10px]">7ala9</h1>
+                        <h2 className="text-4xl font-semibold mb-3 w-11/12 text-center">Welcome back</h2>
+                        <p className="w-11/12 xsm:w-[350px] text-center tracking-wide mb-10 text-sm">Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed do eiusmod tempor</p>
+                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-4">
                             <IoPersonOutline className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
-                            <input type="text" placeholder="Login or Email" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[20px] ${styles.inputPlaceholder}`}/>
+                            <input type="text" placeholder="Full Name" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[20px] ${styles.inputPlaceholder}`}/>
                         </div>
-                        <div className="flex  rounded-xl h-[50px] w-[300px] relative mb-8">
+                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-4">
+                            <GoInbox className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
+                            <input type="text" placeholder="Email Address" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[20px] ${styles.inputPlaceholder}`}/>
+                        </div>
+                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-4">
+                            <IoIosPhonePortrait className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
+                            <input type="text" placeholder="Phone Number" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[20px] ${styles.inputPlaceholder}`}/>
+                        </div>
+                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-8">
                             <GoLock className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
                             <input type={showPassword ? "password" : "text"} placeholder="Password" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[53px] ${styles.inputPlaceholder}`}/>
                             {
-                              showPassword ? <AiOutlineEyeInvisible onClick={() => setPassword(!showPassword)} className="absolute text-green-800 text-[26px] top-3 left-[257px] cursor-pointer"/> :
-                              <AiOutlineEye onClick={() => setPassword(!showPassword)}  className="absolute text-green-800 text-[26px] top-3 left-[257px] cursor-pointer"/>
+                              showPassword ? <AiOutlineEyeInvisible onClick={() => setPassword(!showPassword)} className="absolute text-green-800 text-[26px] top-3 left-[85%] xsm:left-[257px] cursor-pointer"/> :
+                              <AiOutlineEye onClick={() => setPassword(!showPassword)}  className="absolute text-green-800 text-[26px] top-3 left-[85%] xsm:left-[257px] cursor-pointer"/>
                             }
                         </div>
-                        <button type="button" className="bg-green-800 hover:bg-green-900   py-3.5 w-[300px] rounded-xl  transition-all mb-6">Login</button>
-                        <p className="text-sm mb-4">Forgot Password? <span className="text-green-600">Reset Password</span></p>
-                        <p className="mb-6">Don't have any account</p>
-                        <button type="button" className="bg-creatOne hover:bg-green-900   py-3.5 w-[300px] rounded-xl  transition-all">Create One</button>
+                        <button type="button" className="bg-green-800 hover:bg-green-900   py-3.5 w-11/12 xsm:w-[300px] rounded-xl  transition-all mb-6">Login</button>
+                        <p className="mb-6 w-11/12 text-center">You realy have accout go to?<span className="text-green-700 font-medium"> Sign In</span></p>
                     </div>
                     
                 </div>
