@@ -38,7 +38,7 @@
 }
 
 .inputPlaceholder::placeholder {
-  /* Replace 'YourFontFamily' with your desired font family */
+
   font-weight:400;
  
   color: rgba(0, 0, 0, 0.411);
@@ -54,4 +54,10 @@
 .hideScrollbar {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

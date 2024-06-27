@@ -6,6 +6,7 @@ import { HiMenu } from "react-icons/hi";
 import { LuSearch } from "react-icons/lu";
 import { PiLineVertical } from "react-icons/pi";
 import { FaDeleteLeft } from "react-icons/fa6";
+import styles from '../styles/App.module.css';
 
 function NavBar(){
     return(
@@ -16,8 +17,8 @@ function NavBar(){
                 <div className='flex  480:w-1/2 w-[60%]'>
                     <img src={beard} alt="" srcset="" className=" object-cover w-[40px] h-[40px] 480:w-[55px] 480:h-[55px] rounded-full"/>
                     <div className='pt-1 pl-3'>
-                        <p className='text-green-600 text-sm'>Welcome</p>
-                        <p className='text-white text-[11px] font-bold 480:text-[14px]'>Hey, Abdelkarim hajji</p>
+                        <p className={`text-green-600 text-sm ${styles.truncate}`}>Welcome</p>
+                        <p className={`text-white text-[11px] font-bold 480:text-[14px] ${styles.truncate}`}>Hey, Abdelkarim hajji</p>
                     </div>
                 </div>
                 {/* end container of image and name */}
