@@ -3,6 +3,7 @@ import { LuSearch } from "react-icons/lu";
 import { BsPersonFill } from "react-icons/bs";
 import { BiSolidHome } from "react-icons/bi";
 
+
 function BottomMenu() {
     return (
         <div className="fixed bottom-0 w-full lg:w-[70%] 2xl:w-[1000px] sm:h-[100px]  h-[85px] flex justify-center items-start">

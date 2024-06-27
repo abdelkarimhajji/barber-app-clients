@@ -1,8 +1,11 @@
+import {useState} from 'react';
 import beard from '../imgs/beard.jpg';
 import styles from '../styles/App.module.css';
 import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 
 function TopBarbers() {
+    const [liked, setLiked] = useState(false);
     return (
         <div className="w-full px-5 text-white mb-10">
             <div className="pl-3"><p className="font-extrabold text-xl text-green-600 mb-5">Top Barbers</p></div>
@@ -15,7 +18,9 @@ function TopBarbers() {
                             <p className={`text-sm text-gray ${styles.truncate}`}>Abdemoneim</p>
                         </div>
                         <div className="w-[20%] items-center justify-center flex flex-col">
-                            <FaHeart className="text-lg text-red-700 mb-1"/>
+                            { liked ? <FaHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                                : <FaRegHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                            }
                             <p className="text-[12px]">20K</p>
                         </div>
                     </div>
@@ -28,7 +33,9 @@ function TopBarbers() {
                             <p className={`text-sm text-gray ${styles.truncate}`}>Abdemoneim</p>
                         </div>
                         <div className="w-[20%] items-center justify-center flex flex-col">
-                            <FaHeart className="text-lg text-red-700 mb-1"/>
+                        { liked ? <FaHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                                : <FaRegHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                            }
                             <p className="text-[12px]">20K</p>
                         </div>
                     </div>
@@ -41,7 +48,9 @@ function TopBarbers() {
                             <p className={`text-sm text-gray ${styles.truncate}`}>Abdemoneim</p>
                         </div>
                         <div className="w-[20%] items-center justify-center flex flex-col">
-                            <FaHeart className="text-lg text-red-700 mb-1"/>
+                        { liked ? <FaHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                                : <FaRegHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                            }
                             <p className="text-[12px]">20K</p>
                         </div>
                     </div>
@@ -54,7 +63,9 @@ function TopBarbers() {
                             <p className={`text-sm text-gray ${styles.truncate}`}>Abdemoneim</p>
                         </div>
                         <div className="w-[20%] items-center justify-center flex flex-col">
-                            <FaHeart className="text-lg text-red-700 mb-1"/>
+                        { liked ? <FaHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                                : <FaRegHeart onClick={() => setLiked(!liked)} className="text-lg cursor-pointer text-red-700 mb-1"/>
+                            }
                             <p className="text-[12px]">20K</p>
                         </div>
                     </div>
