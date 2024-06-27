@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 import Ads from "../components/Ads";
 import TopBarbers from "../components/TopBarbers";
 import AvailabelBarbers from "../components/AvailabelBarbers";
-
+import BottomMenu from "../components/BottomMenu";
 
 function Home(){
     return(
@@ -12,7 +12,7 @@ function Home(){
                 <Ads />
                 <TopBarbers/>
                 <AvailabelBarbers/>
-                <div></div>
+                <BottomMenu/>
             </div>
         </div>
     );
