@@ -7,7 +7,7 @@ function TopBarbers() {
         <div className="w-full px-5 text-white mb-10">
             <div className="pl-5"><p className="font-extrabold text-xl text-green-600 mb-5">Top Barbers</p></div>
             <div className={`flex gap-5   pb-5  overflow-x-scroll ${styles.hideScrollbar}`}>
-            <div className="min-h-[250px] h-auto w-[250px] shadow-black2 rounded-[20px] flex-shrink-0">
+            <div className="min-h-[250px] h-auto 480:w-[250px] w-[220px] shadow-black2 rounded-[20px] flex-shrink-0">
                 <div className="h-[70%] w-full"><img src={beard} alt=""className="h-full w-full object-cover rounded-t-[20px]" /></div>
                     <div className="h-[30%] w-full p-3 flex">
                         <div className="w-[80%]">
@@ -20,7 +20,7 @@ function TopBarbers() {
                         </div>
                     </div>
                 </div>
-                <div className="min-h-[250px] h-auto w-[250px] shadow-black2 rounded-[20px] flex-shrink-0">
+                <div className="min-h-[250px] h-auto 480:w-[250px] w-[220px] shadow-black2 rounded-[20px] flex-shrink-0">
                 <div className="h-[70%] w-full"><img src={beard} alt=""className="h-full w-full object-cover rounded-t-[20px]" /></div>
                     <div className="h-[30%] w-full p-3 flex">
                         <div className="w-[80%]">
@@ -33,7 +33,7 @@ function TopBarbers() {
                         </div>
                     </div>
                 </div>
-                <div className="min-h-[250px] h-auto w-[250px] shadow-black2 rounded-[20px] flex-shrink-0">
+                <div className="min-h-[250px] h-auto 480:w-[250px] w-[220px] shadow-black2 rounded-[20px] flex-shrink-0">
                 <div className="h-[70%] w-full"><img src={beard} alt=""className="h-full w-full object-cover rounded-t-[20px]" /></div>
                     <div className="h-[30%] w-full p-3 flex">
                         <div className="w-[80%]">
@@ -46,7 +46,7 @@ function TopBarbers() {
                         </div>
                     </div>
                 </div>
-                <div className="min-h-[250px] h-auto w-[250px] shadow-black2 rounded-[20px] flex-shrink-0">
+                <div className="min-h-[250px] h-auto 480:w-[250px] w-[220px] shadow-black2 rounded-[20px] flex-shrink-0">
                 <div className="h-[70%] w-full"><img src={beard} alt=""className="h-full w-full object-cover rounded-t-[20px]" /></div>
                     <div className="h-[30%] w-full p-3 flex">
                         <div className="w-[80%]">
