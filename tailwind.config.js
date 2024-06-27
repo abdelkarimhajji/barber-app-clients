@@ -13,6 +13,7 @@ module.exports = {
       },
       boxShadow: {
         'white': '0 0px 10px -3px rgba(255, 255, 255, 0.8), 0 4px 0px -4px rgba(255, 255, 255, 0.8)',
+        'black2': 'rgba(0, 0, 0, 0.20) 0px 5px 15px;',
       },
       colors: {
         customBlue: '#212529',
