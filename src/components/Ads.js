@@ -8,13 +8,13 @@ function Ads()
             <div className={`w-full  mb-16  md:mb-20 overflow-y-scroll flex  text-white mt-[180px] 324:mt-[160px] 480:mt-[200px] gap-x-5 ${styles.hideScrollbar}`}>
                 
                 <div className="flex-shrink-0 shadow-black2">
-                    <img src={beard} alt=""  className="object-cover rounded-[20px] w-[300px] h-[180px] sm:w-[500px] sm:h-[250px]"/>
+                    <img src={beard} alt=""  className="object-cover rounded-[20px] w-[270px] h-[180px] sm:w-[500px] sm:h-[250px]"/>
                 </div>
                 <div className="flex-shrink-0 shadow-black2">
-                    <img src={beard} alt=""  className="object-cover rounded-[20px] w-[300px] h-[180px] sm:w-[500px] sm:h-[250px]"/>
+                    <img src={beard} alt=""  className="object-cover rounded-[20px] w-[270px] h-[180px] sm:w-[500px] sm:h-[250px]"/>
                 </div>
                 <div className="flex-shrink-0 shadow-black2">
-                    <img src={beard} alt=""  className="object-cover rounded-[20px] w-[300px] h-[180px] sm:w-[500px] sm:h-[250px]"/>
+                    <img src={beard} alt=""  className="object-cover rounded-[20px] w-[270px] h-[180px] sm:w-[500px] sm:h-[250px]"/>
                 </div>
             </div>
         </div>
