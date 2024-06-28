@@ -3,12 +3,13 @@ import styles from '../styles/App.module.css';
 import { FaHeart } from "react-icons/fa";
 import { MdRateReview } from "react-icons/md";
 import { IoIosPersonAdd } from "react-icons/io";
+import { FaArrowAltCircleDown } from "react-icons/fa";
 
-function AvailabelBarbers(){
+function NearestBarbers(){
     return (
         <div className="w-full px-5 ">
             <div className="pl-3"><p className="font-extrabold text-xl text-green-600 mb-6">Nearest Barbers</p></div>
-            <div className=" w-full 400:grid grid-cols-2  md:grid-cols-3  gap-x-4 480:gap-x-2   400:gap-y-3">
+            <div className=" mb-10 w-full 400:grid grid-cols-2  md:grid-cols-3  gap-x-4 480:gap-x-2   400:gap-y-3">
                 <div className="  w-[100%] 400:w-[100%]  sm:h-[320px] h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px] 400:mb-0">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
                         <img src={beard} alt="" srcset="" className="w-full h-full object-cover rounded-t-[20px]"/>
@@ -105,6 +106,12 @@ function AvailabelBarbers(){
                     </div>
                 </div>
             </div>
+            <div className='mb-10 flex justify-center'>
+                <div className='flex justify-center text-md items-center text-gray w-[150px] cursor-pointer font-semibold'>
+                    <p className='text-center '>See More </p>
+                    <FaArrowAltCircleDown className='ml-3 text-lg' />
+                </div>
+            </div>
             <div className='mb-[120px]'>
 
             </div>
@@ -112,4 +119,4 @@ function AvailabelBarbers(){
     );
 }
 
-export default  AvailabelBarbers;
+export default  NearestBarbers;

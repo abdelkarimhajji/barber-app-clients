@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import Ads from "../components/Ads";
 import TopBarbers from "../components/TopBarbers";
-import AvailabelBarbers from "../components/AvailabelBarbers";
+import NearestBarbers from "../components/NearestBarbers";
 import BottomMenu from "../components/BottomMenu";
 
 function Home(){
@@ -11,7 +11,7 @@ function Home(){
                 <NavBar />
                 <Ads />
                 <TopBarbers/>
-                <AvailabelBarbers/>
+                <NearestBarbers/>
                 <BottomMenu/>
             </div>
         </div>
