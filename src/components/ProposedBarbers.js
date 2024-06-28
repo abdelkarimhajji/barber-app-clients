@@ -12,7 +12,7 @@ function ProposedBarbers(){
             <div className=" mb-10 w-full 400:grid grid-cols-2  md:grid-cols-3  gap-x-4 480:gap-x-2   400:gap-y-3">
                 <div className="  w-[100%] 400:w-[100%]  sm:h-[320px] h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px] 400:mb-0">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
-                        <img src={beard} alt="" srcset="" className="w-full h-full object-cover rounded-t-[20px]"/>
+                        <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         {/* <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 text-[12px] text-white font-bold flex items-center justify-center'>Open</div> */}
                         <div className='absolute top-5 left-4 rounded-xl w-[55px] h-[20px] bg-red-800 text-[12px] text-white font-bold flex items-center justify-center'>Closed</div>
                     </div>
@@ -31,7 +31,7 @@ function ProposedBarbers(){
                 </div>
                 <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
-                        <img src={beard} alt="" srcset="" className="w-full h-full object-cover rounded-t-[20px]"/>
+                        <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 text-[12px] text-white font-bold flex items-center justify-center'>Open</div>
                         {/* <div className='absolute top-5 left-4 rounded-xl w-[55px] h-[20px] bg-red-800 text-[12px] text-white font-bold flex items-center justify-center'>Closed</div> */}
                     </div>
@@ -50,7 +50,7 @@ function ProposedBarbers(){
                 </div>
                 <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
-                        <img src={beard} alt="" srcset="" className="w-full h-full object-cover rounded-t-[20px]"/>
+                        <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         {/* <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 text-[12px] text-white font-bold flex items-center justify-center'>Open</div> */}
                         <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-red-800 text-[12px] text-white font-bold flex items-center justify-center'>Closed</div>
                     </div>
@@ -69,7 +69,7 @@ function ProposedBarbers(){
                 </div>
                 <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
-                        <img src={beard} alt="" srcset="" className="w-full h-full object-cover rounded-t-[20px]"/>
+                        <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 text-[12px] text-white font-bold flex items-center justify-center'>Open</div>
                         {/* <div className='absolute top-5 left-4 rounded-xl w-[55px] h-[20px] bg-red-800 text-[12px] text-white font-bold flex items-center justify-center'>Closed</div> */}
                     </div>
@@ -88,7 +88,7 @@ function ProposedBarbers(){
                 </div>
                 <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
-                        <img src={beard} alt="" srcset="" className="w-full h-full object-cover rounded-t-[20px]"/>
+                        <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         {/* <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 text-[12px] text-white font-bold flex items-center justify-center'>Open</div> */}
                         <div className='absolute top-5 left-4 rounded-xl w-[55px] h-[20px] bg-red-800 text-[12px] text-white font-bold flex items-center justify-center'>Closed</div>
                     </div>

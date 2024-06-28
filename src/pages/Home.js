@@ -14,7 +14,7 @@ function Home(){
                 <TopBarbers/>
                 <NearestBarbers/>
                 <ProposedBarbers/>
-                <BottomMenu/>
+                <BottomMenu location="home"/>
             </div>
         </div>
     );
