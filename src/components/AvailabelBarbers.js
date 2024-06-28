@@ -7,7 +7,7 @@ import { IoIosPersonAdd } from "react-icons/io";
 function AvailabelBarbers(){
     return (
         <div className="w-full px-5 ">
-            <div className="pl-3"><p className="font-extrabold text-xl text-green-600 mb-6">Barbers Availabel</p></div>
+            <div className="pl-3"><p className="font-extrabold text-xl text-green-600 mb-6">Nearest Barbers</p></div>
             <div className=" w-full 400:grid grid-cols-2  md:grid-cols-3  gap-x-4 480:gap-x-2   400:gap-y-3">
                 <div className="  w-[100%] 400:w-[100%]  sm:h-[320px] h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px] 400:mb-0">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
@@ -104,6 +104,9 @@ function AvailabelBarbers(){
                         <button type="button" className='text-white text-sm mb-3 overflow-hidden bg-green-700 py-2 sm:px-10 w-[80%] sm:w-auto rounded-xl'>Make Appointment</button>
                     </div>
                 </div>
+            </div>
+            <div className='mb-[120px]'>
+
             </div>
         </div>
     );
