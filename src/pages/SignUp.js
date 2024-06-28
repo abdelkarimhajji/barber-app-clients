@@ -37,26 +37,27 @@ function SignUp() {
                 {/* end of the first part of left login */}
                 {/* start of the second part of right login */}
                 <div className="bg-login w-full lg:w-2/5 md:h-full  h-auto flex items-center justify-center flex-col text-white   lg:rounded-none rounded-xl lg:rounded-r-xl py-[50px]">
-                    <div className="w-full flex items-center justify-center  flex-col  ">
+                    <div className="w-full flex items-center justify-center  flex-col ">
                         <div className="w-[90px] h-[90px] rounded-2xl flex items-center justify-center bg-white shadow-white mb-5">
                                 <GiBeard className="text-[75px] text-login"/>
                         </div>
                         <h1 className="font-semibold font-signature tracking-widest text-2xl mb-[10px]">7ala9</h1>
                         <h2 className="text-4xl font-semibold mb-3 w-11/12 text-center">Welcome back</h2>
                         <p className="w-11/12 xsm:w-[350px] text-center tracking-wide mb-10 text-sm">Lorem ipsum dolor sit amet, consectetur, adipiscing elit, sed do eiusmod tempor</p>
-                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-4">
+                        
+                        <div className="flex  rounded-xl h-[50px]  w-[85%] 400:w-[300px] relative mb-4">
                             <IoPersonOutline className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
                             <input type="text" placeholder="Full Name" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[20px] ${styles.inputPlaceholder}`}/>
                         </div>
-                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-4">
+                        <div className="flex  rounded-xl h-[50px]  w-[85%] xsm:w-[300px] relative mb-4">
                             <GoInbox className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
                             <input type="text" placeholder="Email Address" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[20px] ${styles.inputPlaceholder}`}/>
                         </div>
-                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-4">
+                        <div className="flex  rounded-xl h-[50px]  w-[85%] xsm:w-[300px] relative mb-4">
                             <IoIosPhonePortrait className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
                             <input type="text" placeholder="Phone Number" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[20px] ${styles.inputPlaceholder}`}/>
                         </div>
-                        <div className="flex  rounded-xl h-[50px]  w-11/12 xsm:w-[300px] relative mb-8">
+                        <div className="flex  rounded-xl h-[50px]  w-[85%] xsm:w-[300px] relative mb-8">
                             <GoLock className="text-[26px] top-3  left-2 text-green-800  w-[40px] absolute"/>
                             <input type={showPassword ? "password" : "text"} placeholder="Password" className={`rounded-xl w-full border-green-500 text-placeholder  focus:outline-green-500 box-border pl-[53px] pr-[53px] ${styles.inputPlaceholder}`}/>
                             {
@@ -65,7 +66,8 @@ function SignUp() {
                             }
                         </div>
                         <button type="button" className="bg-green-800 hover:bg-green-900   py-3.5 w-11/12 xsm:w-[300px] rounded-xl  transition-all mb-6">Login</button>
-                        <p className="mb-6 w-11/12 text-center">You realy have accout go to?<span onClick={() => navigate("/signIn")} className="text-green-700 font-medium cursor-pointer hover:text-green-800"> Sign In</span></p>
+                        <p className=" w-11/12 text-center">You realy have accout go to?</p>
+                        <span onClick={() => navigate("/signIn")} className="text-green-700 mb-1 font-medium cursor-pointer hover:text-green-800"> Sign In</span>
                     </div>
                     
                 </div>
