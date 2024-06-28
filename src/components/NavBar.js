@@ -10,7 +10,7 @@ import styles from '../styles/App.module.css';
 
 function NavBar(){
     return(
-        <div className="480:h-[180px] boxsh bg-customBlue shadow-lg flex flex-col w-full lg:w-[70%] 2xl:w-[1000px] box-border fixed">
+        <div className="480:h-[180px] boxsh bg-customBlue shadow-lg flex flex-col w-full lg:w-[70%] 2xl:w-[1000px] box-border fixed z-50">
             {/* start top container  of img and not*/}
             <div className=' p-5 box-border flex '>
                 {/* start container of image and name */}
