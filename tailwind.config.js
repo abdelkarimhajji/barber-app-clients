@@ -31,10 +31,12 @@ module.exports = {
         signature: ['Pacifico', 'cursive'],
       },
       screens: {
+        '280': '280px',
         '375': '375px',
         '343': '343px',
         'xsm': '340px',
         '324': '324px',
+        '400': '400px',
         '480': '480px',
         '586': '586px',
         '940': '940px',
