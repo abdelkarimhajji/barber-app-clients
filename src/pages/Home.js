@@ -3,6 +3,7 @@ import Ads from "../components/Ads";
 import TopBarbers from "../components/TopBarbers";
 import NearestBarbers from "../components/NearestBarbers";
 import BottomMenu from "../components/BottomMenu";
+import ProposedBarbers from "../components/ProposedBarbers"
 
 function Home(){
     return(
@@ -12,6 +13,7 @@ function Home(){
                 <Ads />
                 <TopBarbers/>
                 <NearestBarbers/>
+                <ProposedBarbers/>
                 <BottomMenu/>
             </div>
         </div>
