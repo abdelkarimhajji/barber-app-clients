@@ -112,6 +112,7 @@ function NearestBarbers(){
                     <FaArrowAltCircleDown className='ml-3 text-lg' />
                 </div>
             </div>
+            
         </div>
     );
 }

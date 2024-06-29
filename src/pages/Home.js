@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import NavBar from "../components/NavBar";
 import Ads from "../components/Ads";
 import TopBarbers from "../components/TopBarbers";
@@ -6,6 +7,11 @@ import BottomMenu from "../components/BottomMenu";
 import ProposedBarbers from "../components/ProposedBarbers"
 
 function Home(){
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return(
         <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
             <div className="bg-customBlue h-full w-full lg:w-[70%] 2xl:w-[1000px] box-border relative ">
