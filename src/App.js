@@ -5,17 +5,20 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp"
 import Home from "./pages/Home";
 import Barbers from "./pages/Barbers";
+import Posts from "./pages/Posts";
+
 import './styles/App.css';
 function App() {
   const location = useLocation();
   return (
-      <AnimatePresence exitBeforeEnter={false} mode="wait">
+      <AnimatePresence  mode="wait">
         <Routes>
           <Route path="/" element={<AnimateRoute><Welcome /></AnimateRoute>} />
           <Route path="/signIn" element={<AnimateRoute><SignIn /></AnimateRoute>} />
           <Route path="/signUp" element={<AnimateRoute><SignUp /></AnimateRoute>} />
           <Route path="/home" element={<AnimateRoute><Home /></AnimateRoute>} />
           <Route path="/barbers" element={<AnimateRoute><Barbers /></AnimateRoute>} />
+          <Route path="/posts" element={<AnimateRoute><Posts /></AnimateRoute>} />
         </Routes>
       </AnimatePresence>
   );

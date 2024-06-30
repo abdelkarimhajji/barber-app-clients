@@ -12,6 +12,7 @@ import styles from '../styles/App.module.css';
 function NavBar(){
     const [value, setValue] = useState('');
 
+    // this function is used to delete the last charachter in the input of search
     function deleteCharachter(){
         setValue(value.slice(0, -1));
     }
