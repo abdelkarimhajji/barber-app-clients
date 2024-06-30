@@ -24,15 +24,15 @@ function NavBar(){
                 {/* end container of image and name */}
                 {/* start container notification */}
                 <div className='flex 480:w-1/2 w-[40%] justify-end 480:items-center items-end '>
-                    <div className='480:w-[40px] w-[30px]  480:h-[40px] h-[30px] ml-2 border-[2px] border-white  bg-login cursor-pointer rounded-full flex justify-center items-center'>
-                        <FaHeart className='text-[13px] 480:text-lg text-white'/>
+                    <div className='480:w-[40px] w-[30px]  480:h-[40px] h-[30px] ml-2 border-[2px] border-white hover:border-green-700 transition-all group bg-login cursor-pointer rounded-full flex justify-center items-center'>
+                        <FaHeart className='text-[13px] 480:text-lg text-white group-hover:text-green-700 transition-all'/>
                     </div>
-                    <div className='480:w-[40px] w-[30px] 480:h-[40px] h-[30px] ml-2 relative border-[2px] border-white  bg-login cursor-pointer rounded-full flex justify-center items-center'>
-                        <BiSolidBell className='text-[13px] 480:text-lg text-white'/>
+                    <div className='480:w-[40px] w-[30px] 480:h-[40px] h-[30px] ml-2 relative border-[2px] border-white hover:border-green-700  transition-all group bg-login cursor-pointer rounded-full flex justify-center items-center'>
+                        <BiSolidBell className='text-[13px] 480:text-lg text-white group-hover:text-green-700 transition-all'/>
                         <div className='w-[9px] h-[9px] 480:w-[12px] 480:h-[12px] bg-red-600 rounded-full absolute top-0 left-[19.5px] 480:left-[25.5px]'></div>
                     </div>
-                    <div className='480:w-[40px] w-[30px] 480:h-[40px] h-[30px] ml-2 border-[2px] border-white  bg-login cursor-pointer rounded-full flex justify-center items-center'>
-                        <HiMenu  className='text-[13px] 480:text-lg text-white'/>
+                    <div className='480:w-[40px] w-[30px] 480:h-[40px] h-[30px] ml-2 border-[2px] border-white  hover:border-green-700  transition-all group bg-login cursor-pointer rounded-full flex justify-center items-center'>
+                        <HiMenu  className='text-[13px] 480:text-lg text-white group-hover:text-green-700 transition-all'/>
                     </div>
                 </div>
                 {/* end container notification */}

@@ -1,22 +1,35 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
+import { motion, AnimatePresence } from 'framer-motion';
 import Welcome from "./pages/Welcome";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp"
 import Home from "./pages/Home";
 import Barbers from "./pages/Barbers";
-
+import './styles/App.css';
 function App() {
+  const location = useLocation();
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Welcome />} />
-        <Route path="/signIn" element={<SignIn />} />
-        <Route path="/signUp" element={<SignUp />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/barbers" element={<Barbers />} />
-      </Routes>
-    </BrowserRouter>
+      <AnimatePresence exitBeforeEnter={false} mode="wait">
+        <Routes>
+          <Route path="/" element={<AnimateRoute><Welcome /></AnimateRoute>} />
+          <Route path="/signIn" element={<AnimateRoute><SignIn /></AnimateRoute>} />
+          <Route path="/signUp" element={<AnimateRoute><SignUp /></AnimateRoute>} />
+          <Route path="/home" element={<AnimateRoute><Home /></AnimateRoute>} />
+          <Route path="/barbers" element={<AnimateRoute><Barbers /></AnimateRoute>} />
+        </Routes>
+      </AnimatePresence>
   );
 }
+
+const AnimateRoute = ({ children }) => (
+  <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.3 }}
+  >
+    {children}
+  </motion.div>
+);
 
 export default App;
