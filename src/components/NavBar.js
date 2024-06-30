@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import beard from '../imgs/beard.jpg';
 import { FaHeart } from "react-icons/fa";
 import { BiSolidBell } from "react-icons/bi";
@@ -9,6 +10,12 @@ import { FaDeleteLeft } from "react-icons/fa6";
 import styles from '../styles/App.module.css';
 
 function NavBar(){
+    const [value, setValue] = useState('');
+
+    function deleteCharachter(){
+        setValue(value.slice(0, -1));
+    }
+
     return(
         <div className="480:h-[180px] boxsh bg-customBlue shadow-lg flex flex-col w-full lg:w-[70%] 2xl:w-[1000px] box-border fixed z-50">
             {/* start top container  of img and not*/}
@@ -43,11 +50,11 @@ function NavBar(){
                 <div className=' w-full   h-[35px] 480:h-[50px]  flex rounded-xl mb-6 480:mb-none'>
                     <div className='h-full w-full relative'>
                         <LuSearch className='absolute text-white top-2 480:top-2.5 left-3 text-[20px] 480:text-[30px]'/>
-                        <input type="text" placeholder='Find Your Barber' className='h-full pl-10 480:pl-14 pr-5 bg-searchBar text-white text-sm 480:text-md 2xl:text-[16px] w-full border-none outline-none rounded-l-xl'/>
+                        <input type="text" onChange={(e) => setValue(e.target.value)} value={value}  placeholder='Find Your Barber' className='h-full pl-10 480:pl-14 pr-5 bg-searchBar text-white text-sm 480:text-md 2xl:text-[16px] w-full border-none outline-none rounded-l-xl'/>
                     </div>
                     <div className='rounded-r-xl bg-searchBar  w-[60px] flex justify-center items-center relative'>
                         <PiLineVertical className='absolute  right-9 top-[3px] 480:top-[5px] text-white 480:text-[40px] text-[30px]'/>
-                        <FaDeleteLeft className='text-white cursor-pointer text-xl'/>
+                        <FaDeleteLeft onClick={deleteCharachter} className='text-white cursor-pointer text-xl hover:text-login' />
                     </div>
                 </div>
             </div>
