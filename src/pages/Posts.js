@@ -67,12 +67,12 @@ function Posts(){
                             </div>
                         </div>
                         {/* end reaction */}
-                        <div className="w-full px-5 mb-6">
+                        {/* <div className="w-full px-5 mb-6">
                             <div className="relative">
                                 <input type="text" placeholder="Write a comment ... " className="w-full h-[40px] text-white rounded-xl bg-searchBar box-border pl-5" />
                                 <IoSend className="absolute top-3 right-4 text-gray  text-[19px] cursor-pointer" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
 
@@ -130,12 +130,12 @@ function Posts(){
                             </div>
                         </div>
                         {/* end reaction */}
-                        <div className="w-full px-5 mb-6">
+                        {/* <div className="w-full px-5 mb-6">
                             <div className="relative">
                                 <input type="text" placeholder="Write a comment ... " className="w-full h-[40px] text-white rounded-xl bg-searchBar box-border pl-5" />
                                 <IoSend className="absolute top-3 right-4 text-gray  text-[19px] cursor-pointer" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     
 
