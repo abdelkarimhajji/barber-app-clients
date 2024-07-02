@@ -1,21 +1,43 @@
-import {useState , useRef} from 'react';
+import {useState , useRef, useEffect} from 'react';
 import beard from '../imgs/beard.jpg';
 import image from '../imgs/images1.jpeg';
 import image2 from '../imgs/image2.jpg';
 import { FaHeart } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 
 function AllPosts(){
 
     const [openCommit, setOpenCommit] = useState(false);
+    const elementRef = useRef(null);
+    const [height, setHeight] = useState(0);
+    useEffect(() => {
+        const updateHeight = () => {
+            if (elementRef.current) {
+                setHeight(elementRef.current.offsetHeight);
+                console.log(elementRef.current.offsetHeight);
+            }
+        };
+        updateHeight();
+        window.addEventListener('resize', updateHeight);
+        return () => window.removeEventListener('resize', updateHeight);
+    }, []); 
+
+
+
     function clickComment()
     {
-        // document.body.style.overflow = 'hidden';
         setOpenCommit(true);
+    }
+
+    function closeWindowComment()
+    {
+        setOpenCommit(false);
     }
     return (
         <>
+        
         <div className="w-full flex items-center h-auto justify-center flex-col " >
             {/* start post */}
             <div className="sm:w-[600px]  w-[87%]   h-auto  mb-10 bg-login rounded-xl   " >
@@ -35,7 +57,7 @@ function AllPosts(){
                 {/* end top of post */}
 
                 {/* start content of  post*/}
-                <div className="text-gray mb-3 px-6"><p>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
+                <div className="text-gray mb-3 px-6"><p ref={elementRef}>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
                 <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                     <img 
                         src={beard} 
@@ -104,9 +126,11 @@ function AllPosts(){
                    
                    
                         
-                        <div className='sm:w-[600px] w-[87%] bg-login h-[700px] absolute mb-10'>
-                        <div className="bg-login px-5 mb-6 sm:w-[600px]  w-[87%] h-[80px] flex justify-center items-center  ">
-                           
+                        <div className='sm:w-[600px] w-[87%] bg-login h-[700px]  mb-10'>
+
+                        <div className="bg-login px-5 mb-6 sm:w-[600px]  w-[87%] h-[60px] flex justify-center items-end relative ">
+                           <div className='text-white font-bold text-xl'>the title of the post</div>
+                           <div onClick={closeWindowComment} className='cursor-pointer w-6.5 h-6.5 rounded-full hover:bg-gray hover:text-black text-white absolute right-5 top-5 transition-all'><IoClose className=' text-2xl'/></div>
                         </div>
                         <div className="sm:w-[600px] w-[87%] bg-login h-[700px] overflow-y-scroll rounded-xl  ">
                         
