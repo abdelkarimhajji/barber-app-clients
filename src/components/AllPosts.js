@@ -12,17 +12,21 @@ function AllPosts(){
     const [openCommit, setOpenCommit] = useState(false);
     const elementRef = useRef(null);
     const [height, setHeight] = useState(0);
+    const [displayMore, setDisplayMore] = useState(true);
+    const [text2, setText2] = useState("hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first");
+    const [text, setText] = useState("")
     useEffect(() => {
         const updateHeight = () => {
             if (elementRef.current) {
                 setHeight(elementRef.current.offsetHeight);
-                console.log(elementRef.current.offsetHeight);
+                const newHeight = elementRef.current.offsetHeight;
+                setText(text2.slice(0, 46) + "...\b");
             }
         };
         updateHeight();
         window.addEventListener('resize', updateHeight);
         return () => window.removeEventListener('resize', updateHeight);
-    }, []); 
+    }, [text, text2]); 
 
 
 
@@ -57,7 +61,7 @@ function AllPosts(){
                 {/* end top of post */}
 
                 {/* start content of  post*/}
-                <div className="text-gray mb-3 px-6"><p ref={elementRef}>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
+                <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore ? text2 :text }</p></div>
                 <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                     <img 
                         src={beard} 
