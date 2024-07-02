@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState , useRef} from 'react';
 import beard from '../imgs/beard.jpg';
 import image from '../imgs/images1.jpeg';
 import image2 from '../imgs/image2.jpg';
@@ -7,7 +7,15 @@ import { FaComment } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 
 function AllPosts(){
+
+    const [openCommit, setOpenCommit] = useState(false);
+    function clickComment()
+    {
+        // document.body.style.overflow = 'hidden';
+        setOpenCommit(true);
+    }
     return (
+        <>
         <div className="w-full flex items-center h-auto justify-center flex-col " >
             {/* start post */}
             <div className="sm:w-[600px]  w-[87%]   h-auto  mb-10 bg-login rounded-xl   " >
@@ -56,7 +64,7 @@ function AllPosts(){
                         <FaHeart className=" cursor-pointer"/>
                         <p className="ml-2">Like</p>
                     </div>
-                    <div  className="flex items-center justify-center  py-2 cursor-pointer rounded-xl text-gray w-1/2 transition-all hover:bg-customBlue">
+                    <div onClick={clickComment} className="flex items-center justify-center  py-2 cursor-pointer rounded-xl text-gray w-1/2 transition-all hover:bg-customBlue">
                         <FaComment className=" cursor-pointer"/>
                         <p className="ml-2">Comment</p>
                     </div>
@@ -71,8 +79,7 @@ function AllPosts(){
             </div>
             {/* end post */}
 
-
-
+            
                     
                     
 
@@ -89,6 +96,12 @@ function AllPosts(){
 
 
                 </div>
+                
+                <div className={`  ${openCommit == false ? "hidden" : "block"} bg-login fixed w-full  mb-10 h-screen overflow-y-scroll flex flex-col items-center justify-center bg-transparent2  z-50 top-0 left-0 pt-[0px]`}>
+                    <div className="w-full flex items-center h-auto justify-center flex-col " >
+                    </div>
+                </div>
+            </>
     );
 }
 

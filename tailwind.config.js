@@ -18,6 +18,7 @@ module.exports = {
       colors: {
         customBlue: '#212529',
         transparent: '#17181ccf',
+        transparent2: '#17181c95',
         login: '#101418',
         brown: '#664321',
         hover: '#503316',
