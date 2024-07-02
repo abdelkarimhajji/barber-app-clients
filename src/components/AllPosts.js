@@ -36,12 +36,12 @@ function AllPosts(){
 
                 {/* start content of  post*/}
                 <div className="text-gray mb-3 px-6"><p>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
-                    <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
-                        <img 
-                            src={beard} 
-                            alt="Description of image" 
-                            className="rounded-xl object-contain w-full h-full max-h-[500px] "
-                        />
+                <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
+                    <img 
+                        src={beard} 
+                        alt="Description of image" 
+                        className="rounded-xl object-contain w-full h-full max-h-[500px] "
+                    />
                     </div>
                 {/* end content of  post*/}
 
@@ -97,9 +97,87 @@ function AllPosts(){
 
                 </div>
                 
-                <div className={`  ${openCommit == false ? "hidden" : "block"} bg-login fixed w-full  mb-10 h-screen overflow-y-scroll flex flex-col items-center justify-center bg-transparent2  z-50 top-0 left-0 pt-[0px]`}>
-                    <div className="w-full flex items-center h-auto justify-center flex-col " >
+
+
+                
+                <div className={` ${openCommit ? "block" : "hidden"} bg-login fixed top-0 left-0 w-full  h-screen overflow-y-scroll flex flex-col items-center justify-center bg-transparent2 z-50 pt-20`}>
+                   
+                   
+                        
+                        <div className='sm:w-[600px] w-[87%] bg-login h-[700px] absolute mb-10'>
+                        <div className="bg-login px-5 mb-6 sm:w-[600px]  w-[87%] h-[80px] flex justify-center items-center  ">
+                           
+                        </div>
+                        <div className="sm:w-[600px] w-[87%] bg-login h-[700px] overflow-y-scroll rounded-xl  ">
+                        
+                        
+                        <div className="h-[70px] w-full  flex mb-3">
+                            <div className="w-full h-full  flex items-center px-2">
+                                <img src={beard} alt="" className="h-[50px] w-[50px] object-cover rounded-full"/>
+                                <div className="ml-2 text-white">
+                                    <p className="font-bold ">Abdelkarim hajji</p>
+                                    <p className="text-[10px] text-gray">3 days a go</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="text-gray mb-3 px-6"><p>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
+                        <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
+                            <img 
+                                src={beard} 
+                                alt="Description of image" 
+                                className="rounded-xl object-contain w-full h-full max-h-[500px] "
+                            />
+                        </div>
+
+                        <div className="px-6 mb-3 flex">
+                            <div className="flex items-center justify-start w-1/2 md:text-[15.5px] text-[13.5px]">
+                                <FaHeart className=" cursor-pointer text-red-800"/>
+                                <p className="text-white ml-2">30.000</p>
+                            </div>
+                            <div className="flex items-center justify-end w-1/2 md:text-[15.5px] text-[13.5px]">
+                                <p className="text-white">193 comments</p>
+                            </div>
+                        </div>
+
+                        <div className="text-white sm:px-[70px] px-6 flex mb-5 sm:text-[17.5px] text-[15px]">
+                            <div className="flex items-center justify-center text-gray w-1/2 rounded-xl cursor-pointer transition-all hover:bg-customBlue">
+                                <FaHeart className=" cursor-pointer"/>
+                                <p className="ml-2">Like</p>
+                            </div>
+                            <div onClick={clickComment} className="flex items-center justify-center  py-2 cursor-pointer rounded-xl text-gray w-1/2 transition-all hover:bg-customBlue">
+                                <FaComment className=" cursor-pointer"/>
+                                <p className="ml-2">Comment</p>
+                            </div>
+                        </div>
+
+                            
+
+                        <div className='text-white  h-[200px]'>
+                            <p>kaim hajii ok so thoa can i make that in my home ok so thoa 
+                            kaim hajii ok so thoa can i make that in my home ok so thoa 
+                            kaim hajii ok so thoa can i make that in my home ok so thoa 
+                            kaim hajii ok so thoa can i make that in my home ok so thoa 
+                            kaim hajii ok so thoa can i make that in my home ok so thoa 
+                            kaim hajii ok so thoa can i make that in my home ok so thoa 
+                            </p>
+                        </div>
+
                     </div>
+                    
+
+                        <div className="bg-login px-5 mb-6 sm:w-[600px]  w-[87%] h-[80px] flex justify-center items-center  ">
+                            <div className="relative w-full  h-[80px] flex justify-center items-center">
+                                <input type="text" placeholder="Write a comment ... " className="w-full h-[40px] text-white rounded-xl bg-searchBar box-border pl-5" />
+                                <IoSend className="absolute top-8 right-4 text-gray  text-[19px] cursor-pointer" />
+                            </div>
+                        </div>
+                        <div className='h-[70px] '>
+
+                        </div>
+                    </div>
+                    
+
                 </div>
             </>
     );
