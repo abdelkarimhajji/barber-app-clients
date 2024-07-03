@@ -141,13 +141,13 @@ function AllPosts(){
                                 <div className="w-full h-full  flex items-center px-2">
                                     <img src={beard} alt="" className="h-[50px] w-[50px] object-cover rounded-full"/>
                                     <div className="ml-2 text-white">
-                                        <p className="font-bold sm:text-md text-sm ">Abdelkarim hajji</p>
+                                        <p className="font-bold sm:text-base text-sm ">Abdelkarim hajji</p>
                                         <p className="text-[10px] text-gray">3 days a go</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="text-gray mb-3 px-6 sm:text-md text-sm"><p>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
+                            <div className="text-gray mb-3 px-6 sm:text-base text-sm"><p>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
                             <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                                 <img 
                                     src={beard} 
