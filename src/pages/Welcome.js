@@ -12,28 +12,7 @@ function Welcome() {
         });
       }, []);
     const navigate = useNavigate();
-
-    // const requestFullscreen = (element) => {
-    //     if (element.requestFullscreen) {
-    //         element.requestFullscreen();
-    //     } else if (element.mozRequestFullScreen) { // Firefox
-    //         element.mozRequestFullScreen();
-    //     } else if (element.webkitRequestFullscreen) { // Chrome, Safari, Opera
-    //         element.webkitRequestFullscreen();
-    //     } else if (element.msRequestFullscreen) { // IE/Edge
-    //         element.msRequestFullscreen();
-    //     }
-    // };
-
     const elementRef = useRef(null);
-
-    // function handleFullscreen() {
-        
-   
-    //     if (elementRef.current) {
-    //         requestFullscreen(elementRef.current);
-    //     }
-    // };
             
     return (
         <div  ref={elementRef} className="bg-customBlue min-h-screen h-full flex  items-center justify-center pt-4 pb-4 2xl:items-center sm:pt-10 sm:pb-10 box-border ">
