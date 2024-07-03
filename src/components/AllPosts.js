@@ -126,28 +126,28 @@ function AllPosts(){
 
 
                 
-                <div className={` ${openCommit ? "block" : "hidden"} bg-login fixed top-0 left-0 w-full  h-screen overflow-y-scroll flex flex-col items-center justify-center bg-transparent2 z-50 pt-20`}>
-                   
-                        <div className='sm:w-[600px] w-[87%] bg-red-100 h-[700px]  mb-10 rounded-xl'>
+            <div className={` ${openCommit ? "block" : "hidden"} bg-login fixed top-0 left-0 w-full  h-screen overflow-y-scroll flex flex-col items-center justify-center bg-transparent2 z-50 `}>
+                
+                    <div className='sm:w-[600px] w-[90%]  sm:h-[700px] h-[630px] sm:pt-0   mb-3 rounded-xl'>
 
-                            <div className="bg-login px-5  sm:w-[600px]  w-[87%] h-[60px] flex justify-center items-end relative rounded-t-xl">
-                            <div className='text-white font-bold text-xl'>the title of the post</div>
+                        <div className="bg-login px-5  sm:w-[600px]  w-[100%] h-[60px] flex justify-center items-center relative rounded-t-xl">
+                            <div className='text-white font-bold sm:text-xl text-md'>the title of the post</div>
                             <div onClick={closeWindowComment} className='cursor-pointer w-6.5 h-6.5 rounded-full hover:bg-gray hover:text-black text-white absolute right-5 top-5 transition-all'><IoClose className=' text-2xl'/></div>
-                            </div>
-                            <div className="sm:w-[600px] w-[87%] bg-login h-[700px] overflow-y-scroll   ">
-                            
-                            
+                        </div>
+
+                        <div className="sm:w-[600px] w-[100%] bg-login sm:h-[700px] h-[500px] overflow-y-scroll   ">
+                        
                             <div className="h-[70px] w-full  flex mb-3">
                                 <div className="w-full h-full  flex items-center px-2">
                                     <img src={beard} alt="" className="h-[50px] w-[50px] object-cover rounded-full"/>
                                     <div className="ml-2 text-white">
-                                        <p className="font-bold ">Abdelkarim hajji</p>
+                                        <p className="font-bold sm:text-md text-sm ">Abdelkarim hajji</p>
                                         <p className="text-[10px] text-gray">3 days a go</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className="text-gray mb-3 px-6"><p>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
+                            <div className="text-gray mb-3 px-6 sm:text-md text-sm"><p>hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first </p></div>
                             <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                                 <img 
                                     src={beard} 
@@ -180,57 +180,52 @@ function AllPosts(){
                                 
 
                             <div className='text-white  h-[200px] px-6'>
-                            <div className='flex  w-full min-h-[50px] mb-5'>
-                                    <div className='w-auto min-h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
-                                    <div className='w-[70%] ml-5 text-white flex items-center pl-3 py-3  bg-searchBar rounded-xl'>
+                                <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
+                                    <div className='w-auto min-h-[50px]'><img src={beard} className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
+                                    <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
                                         <p>this is my comment ok bro this is my comment ok bro
                                         this is my comment ok brothis is my comment ok brothis is my comment ok bro
                                         this is my comment ok brothis is my comment ok brothis is my comment ok bro
                                         </p>
                                     </div>
-                            </div>
-                            <div className='flex  w-full h-[50px] mb-5'>
-                                    <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
-                                    <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
-                                        <p>this is my comment ok bro</p>
+                                </div>
+                                <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
+                                    <div className='w-auto min-h-[50px]'><img src={beard} className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
+                                    <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
+                                        <p>this is my comment ok bro this is my comment ok bro
+                                        this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                        this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                        </p>
                                     </div>
-                            </div>
-                            <div className='flex  w-full h-[50px] mb-5'>
-                                    <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
-                                    <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
-                                        <p>this is my comment ok bro</p>
+                                </div>
+                                <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
+                                    <div className='w-auto min-h-[50px]'><img src={beard} className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
+                                    <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
+                                        <p>this is my comment ok bro this is my comment ok bro
+                                        this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                        this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                        </p>
                                     </div>
-                            </div>
-                            <div className='flex  w-full h-[50px] mb-5'>
-                                    <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
-                                    <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
-                                        <p>this is my comment ok bro</p>
-                                    </div>
-                            </div>
-                            <div className='flex  w-full h-[50px] mb-5'>
-                                    <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
-                                    <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
-                                        <p>this is my comment ok bro</p>
-                                    </div>
-                            </div>
+                                </div>
+                            
                             </div>
 
                         </div>
-                        
+                    
 
-                        <div className="bg-login px-5 mb-6 sm:w-[600px]  w-[87%] h-[80px] flex justify-center items-center rounded-b-xl ">
+                        <div className="bg-login px-5 mb-6 sm:w-[600px]  w-[100%] h-[80px] flex justify-center items-center rounded-b-xl ">
                             <div className="relative w-full  h-[80px] flex justify-center items-center">
                                 <input type="text" placeholder="Write a comment ... " className="w-full h-[40px] text-white rounded-xl bg-searchBar box-border pl-5" />
                                 <IoSend className="absolute top-8 right-4 text-gray  text-[19px] cursor-pointer" />
                             </div>
                         </div>
-                        <div className='h-[70px] '>
+                        <div className='sm:h-[40px] h-[0px] '>
 
                         </div>
                     </div>
-                    
+                
 
-                </div>
+            </div>
             </>
     );
 }
