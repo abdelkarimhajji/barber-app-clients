@@ -15,14 +15,17 @@ function AllPosts(){
     const [displayMore, setDisplayMore] = useState(true);
     const [text2, setText2] = useState("hi this is my first post hello first post hello first post hellofirst post hello    !!! hi this is my first post hello !!!hi this is my first");
     const [text, setText] = useState("")
+
     useEffect(() => {
-            if (elementRef.current && displayMore) {
-                setHeight(elementRef.current.offsetHeight);
-                const newHeight = elementRef.current.offsetHeight;
+        if (elementRef.current && displayMore) {
+            setHeight(elementRef.current.offsetHeight);
+            const newHeight = elementRef.current.offsetHeight;
+            if (text2.length > 46) {
                 setDisplayMore(false)
                 setText(text2.slice(0, 46) + "...\b");
-
             }
+
+        }
     }, []); 
 
 
@@ -58,7 +61,7 @@ function AllPosts(){
                 {/* end top of post */}
 
                 {/* start content of  post*/}
-                <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore == true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer hover:text-green-700'> More</span></> }</p></div>
+                <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore == true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer text-green-700 hover:text-green-900 transition-all'> More</span></> }</p></div>
                 <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                     <img 
                         src={beard} 
@@ -178,14 +181,40 @@ function AllPosts(){
 
                             
 
-                        <div className='text-white  h-[200px]'>
-                            <p>kaim hajii ok so thoa can i make that in my home ok so thoa 
-                            kaim hajii ok so thoa can i make that in my home ok so thoa 
-                            kaim hajii ok so thoa can i make that in my home ok so thoa 
-                            kaim hajii ok so thoa can i make that in my home ok so thoa 
-                            kaim hajii ok so thoa can i make that in my home ok so thoa 
-                            kaim hajii ok so thoa can i make that in my home ok so thoa 
-                            </p>
+                        <div className='text-white  h-[200px] px-6'>
+                           <div className='flex  w-full min-h-[50px] mb-5'>
+                                <div className='w-auto min-h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
+                                <div className='w-[70%] ml-5 text-white flex items-center pl-3 py-3  bg-searchBar rounded-xl'>
+                                    <p>this is my comment ok bro this is my comment ok bro
+                                    this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                    this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                    </p>
+                                </div>
+                           </div>
+                           <div className='flex  w-full h-[50px] mb-5'>
+                                <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
+                                <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
+                                    <p>this is my comment ok bro</p>
+                                </div>
+                           </div>
+                           <div className='flex  w-full h-[50px] mb-5'>
+                                <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
+                                <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
+                                    <p>this is my comment ok bro</p>
+                                </div>
+                           </div>
+                           <div className='flex  w-full h-[50px] mb-5'>
+                                <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
+                                <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
+                                    <p>this is my comment ok bro</p>
+                                </div>
+                           </div>
+                           <div className='flex  w-full h-[50px] mb-5'>
+                                <div className='w-auto h-[50px]'><img src={beard} className='w-[50px] h-[50px] object-cover rounded-full' /></div>
+                                <div className='w-[70%] ml-5 text-white flex items-center pl-3 bg-searchBar rounded-xl'>
+                                    <p>this is my comment ok bro</p>
+                                </div>
+                           </div>
                         </div>
 
                     </div>
