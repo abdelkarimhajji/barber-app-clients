@@ -13,20 +13,17 @@ function AllPosts(){
     const elementRef = useRef(null);
     const [height, setHeight] = useState(0);
     const [displayMore, setDisplayMore] = useState(true);
-    const [text2, setText2] = useState("hi this is my first post hello !!! hi this is my first post hello !!!hi this is my first");
+    const [text2, setText2] = useState("hi this is my first post hello first post hello first post hellofirst post hello    !!! hi this is my first post hello !!!hi this is my first");
     const [text, setText] = useState("")
     useEffect(() => {
-        const updateHeight = () => {
-            if (elementRef.current) {
+            if (elementRef.current && displayMore) {
                 setHeight(elementRef.current.offsetHeight);
                 const newHeight = elementRef.current.offsetHeight;
+                setDisplayMore(false)
                 setText(text2.slice(0, 46) + "...\b");
+
             }
-        };
-        updateHeight();
-        window.addEventListener('resize', updateHeight);
-        return () => window.removeEventListener('resize', updateHeight);
-    }, [text, text2]); 
+    }, []); 
 
 
 
@@ -61,7 +58,7 @@ function AllPosts(){
                 {/* end top of post */}
 
                 {/* start content of  post*/}
-                <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore ? text2 :text }</p></div>
+                <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore == true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer hover:text-green-700'> More</span></> }</p></div>
                 <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                     <img 
                         src={beard} 
