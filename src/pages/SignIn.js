@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useNavigate} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 import { GiBeard } from "react-icons/gi";
 import { IoPersonOutline } from "react-icons/io5";
 import { GoLock } from "react-icons/go";

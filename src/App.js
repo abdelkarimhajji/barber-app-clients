@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation} from "react-router-dom";
+import {  Route, Routes} from "react-router-dom";
 import { motion, AnimatePresence } from 'framer-motion';
 import Welcome from "./pages/Welcome";
 import SignIn from "./pages/SignIn";
@@ -9,7 +9,6 @@ import Posts from "./pages/Posts";
 
 import './styles/App.css';
 function App() {
-  const location = useLocation();
   return (
       <AnimatePresence  mode="wait">
         <Routes>

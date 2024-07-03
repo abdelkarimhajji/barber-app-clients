@@ -1,7 +1,7 @@
 import {useState , useRef, useEffect} from 'react';
 import beard from '../imgs/beard.jpg';
-import image from '../imgs/images1.jpeg';
-import image2 from '../imgs/image2.jpg';
+// import image from '../imgs/images1.jpeg';
+// import image2 from '../imgs/image2.jpg';
 import { FaHeart } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
@@ -11,20 +11,14 @@ function AllPosts(){
 
     const [openCommit, setOpenCommit] = useState(false);
     const elementRef = useRef(null);
-    const [height, setHeight] = useState(0);
-    const [displayMore, setDisplayMore] = useState(true);
-    const [text2, setText2] = useState("hi this is my first post hello first post hello first post hellofirst post hello    !!! hi this is my first post hello !!!hi this is my first");
+    const [displayMore, setDisplayMore] = useState(false);
+    const text2 = "hi this is my first post hello first post hello first post hellofirst post hello    !!! hi this is my first post hello !!!hi this is my first";
     const [text, setText] = useState("")
 
     useEffect(() => {
-        if (elementRef.current && displayMore) {
-            setHeight(elementRef.current.offsetHeight);
-            const newHeight = elementRef.current.offsetHeight;
-            if (text2.length > 46) {
-                setDisplayMore(false)
-                setText(text2.slice(0, 46) + "...\b");
-            }
-
+        if (text2.length > 46) {
+            setDisplayMore(false)
+            setText(text2.slice(0, 46) + "...\b");
         }
     }, []); 
 
@@ -61,11 +55,11 @@ function AllPosts(){
                 {/* end top of post */}
 
                 {/* start content of  post*/}
-                <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore == true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer text-green-700 hover:text-green-900 transition-all'> More</span></> }</p></div>
+                <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore === true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer text-green-700 hover:text-green-900 transition-all'> More</span></> }</p></div>
                 <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
-                    <img 
+                    <img
                         src={beard} 
-                        alt="Description of image" 
+                        alt="barber"
                         className="rounded-xl object-contain w-full h-full max-h-[500px] "
                     />
                     </div>
@@ -151,7 +145,7 @@ function AllPosts(){
                             <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                                 <img 
                                     src={beard} 
-                                    alt="Description of image" 
+                                    alt="barber" 
                                     className="rounded-xl object-contain w-full h-full max-h-[500px] "
                                 />
                             </div>
@@ -181,7 +175,7 @@ function AllPosts(){
 
                             <div className='text-white  h-[200px] px-6'>
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
-                                    <div className='w-auto min-h-[50px]'><img src={beard} className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
+                                    <div className='w-auto min-h-[50px]'><img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
                                     <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
                                         <p>this is my comment ok bro this is my comment ok bro
                                         this is my comment ok brothis is my comment ok brothis is my comment ok bro
@@ -190,7 +184,7 @@ function AllPosts(){
                                     </div>
                                 </div>
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
-                                    <div className='w-auto min-h-[50px]'><img src={beard} className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
+                                    <div className='w-auto min-h-[50px]'><img src={beard} alt='barber' className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
                                     <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
                                         <p>this is my comment ok bro this is my comment ok bro
                                         this is my comment ok brothis is my comment ok brothis is my comment ok bro
@@ -199,7 +193,7 @@ function AllPosts(){
                                     </div>
                                 </div>
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
-                                    <div className='w-auto min-h-[50px]'><img src={beard} className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
+                                    <div className='w-auto min-h-[50px]'><img src={beard} alt='barber' className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
                                     <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
                                         <p>this is my comment ok bro this is my comment ok bro
                                         this is my comment ok brothis is my comment ok brothis is my comment ok bro
