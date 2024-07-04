@@ -6,6 +6,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import styles from "../styles/App.module.css";
 
 function AllPosts(){
 
@@ -129,7 +130,7 @@ function AllPosts(){
                             <div onClick={closeWindowComment} className='cursor-pointer w-6.5 h-6.5 rounded-full hover:bg-gray hover:text-black text-white absolute right-5 top-5 transition-all'><IoClose className=' text-2xl'/></div>
                         </div>
 
-                        <div className="sm:w-[600px] w-[100%] bg-login sm:h-[700px] h-[500px] overflow-y-scroll   ">
+                        <div className={`sm:w-[600px] w-[100%] bg-login sm:h-[700px] h-[500px] overflow-y-scroll   ${styles.hideScrollbar}`}>
                         
                             <div className="h-[70px] w-full  flex mb-3">
                                 <div className="w-full h-full  flex items-center px-2">
@@ -173,10 +174,10 @@ function AllPosts(){
 
                                 
 
-                            <div className='text-white  h-[200px] px-6'>
+                            <div className='text-white  h-[200px] sm:px-6 px-3'>
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
-                                    <div className='w-auto min-h-[50px]'><img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
-                                    <div className='w-[70%] ml-5'>
+                                    <div className='sm:w-auto w-[12%] min-h-[50px]'><img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[35px] h-[35px] object-cover rounded-full' /></div>
+                                    <div className='sm:w-[70%] w-[90%] ml-5 '>
                                         <div className='w-[100%]  text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl relative'>
                                             <p>this is my comment ok bro this is my comment ok bro
                                             this is my comment ok brothis is my comment ok brothis is my comment ok bro
