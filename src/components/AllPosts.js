@@ -177,14 +177,14 @@ function AllPosts(){
                             <div className='text-white  min-h-[200px] sm:px-6 px-3 '>
 
 
-                                <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm  '>
+                                <div className='flex  w-full min-h-[50px] mb-10 sm:text-md text-sm  '>
                                    
                                     <div className='sm:w-auto w-[12%]   flex flex-col '>
                                         <div className='h-[50px] '>
                                             <img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[35px] h-[35px] object-cover rounded-full' />
                                         </div>
                                         <div className=' h-[100%] relative '>
-                                            <div className='absolute w-9 h-[90%] left-[25px] rounded-bl-xl border-l-2 border-b-2 border-network z-50'></div>
+                                            <div className='absolute w-9 h-[100%] left-[25px] rounded-bl-xl border-l-2 border-b-2 border-network z-10'></div>
                                         </div>
                                         
                                     </div>
@@ -200,17 +200,17 @@ function AllPosts(){
                                                 <p className='text-[10px]'>+20K</p>
                                             </div>
                                         </div>
-                                        <div className='flex px-3 text-gray sm:pt-1 sm:text-sm text-[12px]'>
+                                        <div className='flex px-3 text-gray sm:pt-1 sm:text-sm text-[12px] mb-3'>
                                             <p>22d </p>
                                             <p className='ml-4 cursor-pointer hover:underline' >Like</p>
                                             <p className='ml-4 cursor-pointer hover:underline'>Reply</p> 
                                         </div>
-                                        <div className=" relative h-[200px]">
-                                            See all the response
+                                        <div className=" relative mb-10 h-[200px]">
+                                            <p>see all reply</p>
                                             <div className='absolute h-5 w-9 border-l-2 border-b-2 border-network rounded-bl-xl top-[-5px] left-[-37px]'></div>
                                         </div>
-                                       <div className='h-[60px] w-full bg-red-500'>
-
+                                       <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative'>
+                                            <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0 z-20' />
                                        </div>
                                     </div>
                                     
