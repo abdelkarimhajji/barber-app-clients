@@ -174,28 +174,53 @@ function AllPosts(){
 
                                 
 
-                            <div className='text-white  h-[200px] sm:px-6 px-3'>
-                                <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
-                                    <div className='sm:w-auto w-[12%] min-h-[50px]'><img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[35px] h-[35px] object-cover rounded-full' /></div>
-                                    <div className='sm:w-[70%] w-[90%] ml-5 '>
+                            <div className='text-white  min-h-[200px] sm:px-6 px-3 '>
+
+
+                                <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm  '>
+                                   
+                                    <div className='sm:w-auto w-[12%]   flex flex-col '>
+                                        <div className='h-[50px] '>
+                                            <img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[35px] h-[35px] object-cover rounded-full' />
+                                        </div>
+                                        <div className=' h-[100%] relative '>
+                                            <div className='absolute w-9 h-[90%] left-[25px] rounded-bl-xl border-l-2 border-b-2 border-network z-50'></div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div className='sm:w-[70%] w-[90%] ml-3 mt-3 '>
                                         <div className='w-[100%]  text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl relative'>
                                             <p>this is my comment ok bro this is my comment ok bro
                                             this is my comment ok brothis is my comment ok brothis is my comment ok bro
-                                            this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                            this is my comment ok brothis is my comment ok brothis is my comment ok bro ok  
                                             </p>
-                                            <div className='absolute right-0 bottom-[-10px] bg-customBlue w-10 rounded-xl p-1  flex justify-center  '>
+                                            <div className='absolute right-0 bottom-[-15px] bg-customBlue min-w-10 rounded-xl p-1  flex justify-center  '>
                                                 <FaHeart className=" cursor-pointer text-red-800"/>
-                                                <p className='text-[10px]'>+1</p>
+                                                <p className='text-[10px]'>+20K</p>
                                             </div>
                                         </div>
-                                        <div className='flex px-3 text-gray pt-1'>
+                                        <div className='flex px-3 text-gray sm:pt-1 sm:text-sm text-[12px]'>
                                             <p>22d </p>
                                             <p className='ml-4 cursor-pointer hover:underline' >Like</p>
                                             <p className='ml-4 cursor-pointer hover:underline'>Reply</p> 
                                         </div>
+                                        <div className=" relative h-[200px]">
+                                            See all the response
+                                            <div className='absolute h-5 w-9 border-l-2 border-b-2 border-network rounded-bl-xl top-[-5px] left-[-37px]'></div>
+                                        </div>
+                                       <div className='h-[60px] w-full bg-red-500'>
+
+                                       </div>
                                     </div>
                                     
                                 </div>
+
+
+
+
+
+
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
                                     <div className='w-auto min-h-[50px]'><img src={beard} alt='barber' className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
                                     <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>

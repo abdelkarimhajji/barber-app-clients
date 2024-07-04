@@ -27,6 +27,8 @@ module.exports = {
         creatOne: '#888787',
         placeholder: '#000000AF',
         searchBar: '#66707a',
+        searchBar: '#66707a',
+        network: '#3a3b3c',
       },
       fontFamily: {
         signature: ['Pacifico', 'cursive'],
