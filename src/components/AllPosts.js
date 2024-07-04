@@ -210,7 +210,8 @@ function AllPosts(){
                                             <div className='absolute h-5 w-9 border-l-2 border-b-2 border-network rounded-bl-xl top-[-5px] left-[-37px]'></div>
                                         </div>
                                        <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative'>
-                                            <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0 z-20' />
+                                            <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0 ' />
+                                            <IoSend className="absolute top-12 right-4 text-gray  text-[19px] cursor-pointer" />
                                        </div>
                                     </div>
                                     
