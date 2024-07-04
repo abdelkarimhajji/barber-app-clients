@@ -176,12 +176,24 @@ function AllPosts(){
                             <div className='text-white  h-[200px] px-6'>
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
                                     <div className='w-auto min-h-[50px]'><img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
-                                    <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
-                                        <p>this is my comment ok bro this is my comment ok bro
-                                        this is my comment ok brothis is my comment ok brothis is my comment ok bro
-                                        this is my comment ok brothis is my comment ok brothis is my comment ok bro
-                                        </p>
+                                    <div className='w-[70%] ml-5'>
+                                        <div className='w-[100%]  text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl relative'>
+                                            <p>this is my comment ok bro this is my comment ok bro
+                                            this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                            this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                            </p>
+                                            <div className='absolute right-0 bottom-[-10px] bg-customBlue w-10 rounded-xl p-1  flex justify-center  '>
+                                                <FaHeart className=" cursor-pointer text-red-800"/>
+                                                <p className='text-[10px]'>+1</p>
+                                            </div>
+                                        </div>
+                                        <div className='flex px-3 text-gray pt-1'>
+                                            <p>22d </p>
+                                            <p className='ml-4 cursor-pointer hover:underline' >Like</p>
+                                            <p className='ml-4 cursor-pointer hover:underline'>Reply</p> 
+                                        </div>
                                     </div>
+                                    
                                 </div>
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
                                     <div className='w-auto min-h-[50px]'><img src={beard} alt='barber' className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
