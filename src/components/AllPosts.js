@@ -215,8 +215,8 @@ function AllPosts(){
                                         </div>
                                         </div>
                                        <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative z-10'>
-                                            <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0 ' />
-                                            <IoSend className="absolute top-12 right-4 text-gray  text-[19px] cursor-pointer" />
+                                            <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0  pr-[45px]' />
+                                            <IoSend className="absolute top-12 right-3 text-gray  text-[19px] cursor-pointer" />
                                        </div>
                                     </div>
                                     
@@ -253,7 +253,7 @@ function AllPosts(){
 
                         <div className="bg-login px-5 mb-6 sm:w-[600px]  w-[100%] h-[80px] flex justify-center items-center rounded-b-xl ">
                             <div className="relative w-full  h-[80px] flex justify-center items-center">
-                                <input type="text" placeholder="Write a comment ... " className="w-full h-[40px] text-white rounded-xl bg-searchBar box-border pl-5" />
+                                <input type="text" placeholder="Write a comment ... " className="w-full h-[40px] text-white rounded-xl bg-searchBar box-border pl-5 pr-[50px]" />
                                 <IoSend className="absolute top-8 right-4 text-gray  text-[19px] cursor-pointer" />
                             </div>
                         </div>
