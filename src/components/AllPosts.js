@@ -179,12 +179,12 @@ function AllPosts(){
 
                                 <div className='flex  w-full min-h-[50px] mb-10 sm:text-md text-sm  '>
                                    
-                                    <div className='sm:w-auto w-[12%]   flex flex-col '>
-                                        <div className='h-[50px] '>
-                                            <img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[35px] h-[35px] object-cover rounded-full' />
+                                    <div className='sm:w-auto w-[37px]   flex flex-col '>
+                                        <div className='sm:h-[50px] bg-red-100 flex justify center '>
+                                            <img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[37px] h-[37px] object-cover rounded-full' />
                                         </div>
                                         <div className=' h-[100%] relative '>
-                                            <div className='absolute w-9 h-[100%] left-[25px] rounded-bl-xl border-l-2 border-b-2 border-network z-10'></div>
+                                            <div className='absolute w-9 h-[100%] sm:left-[25px] left-[19px] rounded-bl-xl border-l-2 border-b-2 border-network z-10'></div>
                                         </div>
                                         
                                     </div>
@@ -206,10 +206,14 @@ function AllPosts(){
                                             <p className='ml-4 cursor-pointer hover:underline'>Reply</p> 
                                         </div>
                                         <div className=" relative mb-10 h-[200px]">
-                                            <p>see all reply</p>
-                                            <div className='absolute h-5 w-9 border-l-2 border-b-2 border-network rounded-bl-xl top-[-5px] left-[-37px]'></div>
+                                        <div className="relative mb-10 h-[200px]">
+                                            {/* <div className='bg-red-500 w-full z-50'> */}
+                                                <p className='z-50'>see all reply</p>
+                                            {/* </div> */}
+                                            <div className='absolute sm:h-5 sm:w-9 h-5 w-[30px] border-l-2 border-b-2 border-network rounded-bl-xl top-[-5px] sm:left-[-37px] left-[-30px] z-10'></div>
                                         </div>
-                                       <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative'>
+                                        </div>
+                                       <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative z-10'>
                                             <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0 ' />
                                             <IoSend className="absolute top-12 right-4 text-gray  text-[19px] cursor-pointer" />
                                        </div>
