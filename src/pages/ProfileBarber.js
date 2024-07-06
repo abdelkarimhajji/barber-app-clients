@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import BottomMenu from "../components/BottomMenu";
+import beard from '../imgs/beard.jpg';
 
 function ProfileBarber(){
     return (
@@ -8,6 +9,22 @@ function ProfileBarber(){
                 <NavBar />
                 <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
                 
+                <div className="w-full flex items-center flex-col">
+                    <div className="w-[90%] h-[300px] bg-red-400 relative rounded-xl">
+                        <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl"/>
+                        <div className="w-[140px] h-[140px] rounded-full bg-red-600 absolute top-[260px] left-10">
+                            <img src={beard} alt="" className="w-full h-full object-cover rounded-full"/>
+                        </div>
+                    </div>
+                    <div className="">hi</div>
+                </div>
+                
+
+
+
+
+
+
                 <BottomMenu location="posts"/>
                 <div className='mb-[120px]'>
 

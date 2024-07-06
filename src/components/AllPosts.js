@@ -206,13 +206,13 @@ function AllPosts(){
                                             <p className='ml-4 cursor-pointer hover:underline' >Like</p>
                                             <p className='ml-4 cursor-pointer hover:underline'>Reply</p> 
                                         </div>
-                                        <div className=" relative mb-10 h-[200px]">
-                                        <div className="relative mb-10 h-[200px]">
-                                            <div className='bg-login w-full z-50 absolute'>
-                                                <p className='z-50'>see all reply</p>
+                                        <div className=" relative mb-10 ">
+                                            <div className="relative mb-10 ">
+                                                <div className='bg-login w-full z-50 absolute'>
+                                                    <p className='z-50'>see all reply</p>
+                                                </div>
+                                                <div  className='absolute sm:h-5 sm:w-9 h-5 570:w-[30px]  w-[70px] border-l-2 border-b-2 border-network rounded-bl-xl top-[-7px] sm:left-[-37px] left-[-27.5px]'></div>
                                             </div>
-                                            <div  className='absolute sm:h-5 sm:w-9 h-5 570:w-[30px]  w-[70px] border-l-2 border-b-2 border-network rounded-bl-xl top-[-7px] sm:left-[-37px] left-[-27.5px]'></div>
-                                        </div>
                                         </div>
                                        <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative z-10'>
                                             <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0  pr-[45px]' />
