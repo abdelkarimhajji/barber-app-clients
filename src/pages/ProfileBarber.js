@@ -12,9 +12,13 @@ function ProfileBarber(){
                 <div className="w-full flex items-center flex-col">
                     <div className="w-[90%] h-[300px] bg-red-400 relative rounded-xl">
                         <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl"/>
-                        <div className="w-[140px] h-[140px] rounded-full bg-red-600 absolute top-[260px] left-10">
-                            <img src={beard} alt="" className="w-full h-full object-cover rounded-full"/>
-                        </div>
+                            <div className="w-[140px] h-[140px] rounded-full bg-red-600 absolute top-[260px] left-10">
+                                <img src={beard} alt="" className="w-full h-full object-cover rounded-full"/>
+                                
+                                <div className="w-[25px] h-[25px] bg-customBlue absolute right-[9px] bottom-[7px] rounded-full flex items-center justify-center">
+                                <div className="w-[17px] h-[17px] bg-green-700 rounded-full"></div>
+                                </div>
+                            </div>
                     </div>
                     <div className="w-full pl-[245px] pt-[25px] text-white">
                         <p className="font-bold text-lg">Abdelkarim Hajji</p>
