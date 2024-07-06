@@ -1,7 +1,8 @@
 import NavBar from "../components/NavBar";
 import BottomMenu from "../components/BottomMenu";
 import beard from '../imgs/beard.jpg';
-
+import { IoIosPersonAdd } from "react-icons/io";
+import { FaHeart } from "react-icons/fa";
 function ProfileBarber(){
     return (
         <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
@@ -22,7 +23,17 @@ function ProfileBarber(){
                     </div>
                     <div className="w-full pl-[245px] pt-[25px] text-white">
                         <p className="font-bold text-lg">Abdelkarim Hajji</p>
-                        <p>Hajji</p>
+                        <div className="flex">
+                            <div className="flex items-center">
+                                <p className="480:text-[15px] text-gray">20K </p>
+                                <FaHeart className='text-[13px] 480:text-[15px] ml-1  text-red-700 transition-all'/>
+                            </div>
+                            <div className="flex items-center ml-6">
+                                <p className="480:text-[15px] text-gray">20K </p>
+                                <IoIosPersonAdd className='text-[13px] 480:text-[19px] ml-1  text-green-700 transition-all'/>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 
