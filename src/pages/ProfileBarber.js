@@ -16,7 +16,10 @@ function ProfileBarber(){
                             <img src={beard} alt="" className="w-full h-full object-cover rounded-full"/>
                         </div>
                     </div>
-                    <div className="">hi</div>
+                    <div className="w-full pl-[245px] pt-[25px] text-white">
+                        <p className="font-bold text-lg">Abdelkarim Hajji</p>
+                        <p>Hajji</p>
+                    </div>
                 </div>
                 
 
