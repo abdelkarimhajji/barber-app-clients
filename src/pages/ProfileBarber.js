@@ -3,6 +3,8 @@ import BottomMenu from "../components/BottomMenu";
 import beard from '../imgs/beard.jpg';
 import { IoIosPersonAdd } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
+import { BsPersonFillCheck } from "react-icons/bs";
+import { IoMdHeartDislike } from "react-icons/io";
 function ProfileBarber(){
     return (
         <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
@@ -13,13 +15,16 @@ function ProfileBarber(){
                 <div className="w-full flex items-center flex-col">
                     <div className="w-[90%] h-[300px] bg-red-400 relative rounded-xl">
                         <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl"/>
-                            <div className="w-[140px] h-[140px] rounded-full bg-red-600 absolute top-[260px] left-10">
+                        <div className="w-[140px] h-[140px] bg-customBlue    rounded-full absolute top-[260px] left-10 flex items-center justify-center">
+                            <div className="w-[130px] h-[130px] rounded-full">
                                 <img src={beard} alt="" className="w-full h-full object-cover rounded-full"/>
                                 
                                 <div className="w-[25px] h-[25px] bg-customBlue absolute right-[9px] bottom-[7px] rounded-full flex items-center justify-center">
                                 <div className="w-[17px] h-[17px] bg-green-700 rounded-full"></div>
                                 </div>
                             </div>
+                        </div>
+                            
                     </div>
                     <div className="w-full pl-[245px] pt-[25px] relative text-white  z-10">
                         <p className="font-bold text-lg">Abdelkarim Hajji</p>
@@ -33,9 +38,9 @@ function ProfileBarber(){
                                 <FaHeart className='text-[13px] 480:text-[15px] ml-1  text-red-700 transition-all'/>
                             </div>
                         </div>
-                        <div  className="flex absolute right-12 bottom-0 w-[300px] justify-around">
-                            <button type="button" className="w-[125px] py-1.5 rounded-xl bg-login flex justify-center items-center "><IoIosPersonAdd className=""/> <span className="ml-2">Follow</span></button>
-                            <button type="button" className="w-[125px] py-1.5 rounded-xl bg-red-700">Like</button>
+                        <div  className="flex absolute right-14 bottom-0 w-[280px] justify-around">
+                            <button type="button" className="w-[125px] py-1.5 rounded-xl bg-login flex justify-center items-center "><BsPersonFillCheck className=""/> <span className="ml-2">Friends</span></button>
+                            <button type="button" className="w-[125px] py-1.5 rounded-xl bg-red-700 flex justify-center items-center ">< IoMdHeartDislike className=""/> <span className="ml-2">Like</span></button>
                         </div>
                     </div>
                 </div>
