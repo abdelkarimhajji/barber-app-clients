@@ -21,19 +21,22 @@ function ProfileBarber(){
                                 </div>
                             </div>
                     </div>
-                    <div className="w-full pl-[245px] pt-[25px] text-white">
+                    <div className="w-full pl-[245px] pt-[25px] relative text-white  z-10">
                         <p className="font-bold text-lg">Abdelkarim Hajji</p>
                         <div className="flex">
                             <div className="flex items-center">
                                 <p className="480:text-[15px] text-gray">20K </p>
-                                <FaHeart className='text-[13px] 480:text-[15px] ml-1  text-red-700 transition-all'/>
-                            </div>
-                            <div className="flex items-center ml-6">
-                                <p className="480:text-[15px] text-gray">20K </p>
                                 <IoIosPersonAdd className='text-[13px] 480:text-[19px] ml-1  text-green-700 transition-all'/>
                             </div>
+                            <div className="flex items-center ml-4">
+                                <p className="480:text-[15px] text-gray">20K </p>
+                                <FaHeart className='text-[13px] 480:text-[15px] ml-1  text-red-700 transition-all'/>
+                            </div>
                         </div>
-                        
+                        <div  className="flex absolute right-12 bottom-0 w-[300px] justify-around">
+                            <button type="button" className="w-[125px] py-1.5 rounded-xl bg-login flex justify-center items-center "><IoIosPersonAdd className=""/> <span className="ml-2">Follow</span></button>
+                            <button type="button" className="w-[125px] py-1.5 rounded-xl bg-red-700">Like</button>
+                        </div>
                     </div>
                 </div>
                 
