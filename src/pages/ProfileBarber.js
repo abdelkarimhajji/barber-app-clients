@@ -6,6 +6,7 @@ import { IoIosPersonAdd } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
 import { BsPersonFillCheck } from "react-icons/bs";
 import { IoMdHeartDislike } from "react-icons/io";
+import { IoCalendarSharp } from "react-icons/io5";
 function ProfileBarber(){
     return (
         <div className="bg-login w-full  min-h-screen h-auto flex justify-center ">
@@ -43,16 +44,18 @@ function ProfileBarber(){
                             <button type="button" className="w-[125px] py-1.5 rounded-xl bg-login flex justify-center items-center "><BsPersonFillCheck className=""/> <span className="ml-2">Friends</span></button>
                             <button type="button" className="w-[125px] py-1.5 rounded-xl bg-red-700 flex justify-center items-center ">< IoMdHeartDislike className=""/> <span className="ml-2">Like</span></button>
                         </div>
+                        <div className="flex absolute right-16 bottom-[-47px] bg-red-100 rounded-xl  justify-center items-center  w-[260px]">
+                        <button type="button" className="w-full py-1.5 rounded-xl bg-green-800 flex justify-center items-center "><IoCalendarSharp className=""/> <span className="ml-2">Appointement</span></button> 
+                        </div>
                     </div>
                 </div>
                 
 
 
 
-                <div className="flex w-full bg-red-900">
-                    <div className="w-[30%] h-[200px] bg-green-800"></div>
+                <div className="flex w-full  justify-around">
+                    <div className="w-[35%] h-[400px] bg-green-800"></div>
                     <AllPosts />
-
                 </div>
 
                 <BottomMenu location="posts"/>
