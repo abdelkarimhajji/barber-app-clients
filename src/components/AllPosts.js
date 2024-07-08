@@ -37,7 +37,7 @@ function AllPosts(){
     return (
         <>
         
-        <div className="sm:w-[600px] w-[87%] flex bg-red-50 items-center h-auto justify-center flex-col " >
+        <div className="sm:w-[600px] w-[87%] flex  items-center h-auto justify-center flex-col " >
             {/* start post */}
             <div className="sm:w-[600px]  w-[87%]   h-auto  mb-10 bg-login rounded-xl   " >
                 {/* start top of post */}
