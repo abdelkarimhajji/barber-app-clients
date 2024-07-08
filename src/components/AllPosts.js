@@ -37,7 +37,7 @@ function AllPosts(){
     return (
         <>
         
-        <div className="w-full flex items-center h-auto justify-center flex-col " >
+        <div className="sm:w-[600px] w-[87%] flex bg-red-50 items-center h-auto justify-center flex-col " >
             {/* start post */}
             <div className="sm:w-[600px]  w-[87%]   h-auto  mb-10 bg-login rounded-xl   " >
                 {/* start top of post */}
@@ -177,6 +177,50 @@ function AllPosts(){
                             <div className='text-white  min-h-[200px] sm:px-6 px-3 '>
 
 
+                                <div className='flex  w-full min-h-[50px] mb-10 sm:text-md text-sm  '>
+                                   
+                                    <div className='sm:w-auto w-[37px]   flex flex-col '>
+                                        <div className='sm:h-[50px] flex justify center '>
+                                            <img src={beard} alt="barber" className='sm:w-[50px] sm:h-[50px] w-[37px] h-[37px] object-cover rounded-full' />
+                                        </div>
+                                        <div className=' h-[100%] relative  bg-login flex'>
+                                            <div className='h-[100%] w-[19px] z-20 bg-login' ></div>
+                                            <div className='absolute w-9 h-[100%] sm:left-[25px] left-[19px] rounded-bl-xl border-l-2 border-b-2 border-network z-10'></div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div className='sm:w-[70%] w-[90%] ml-3 mt-3 '>
+                                        <div className='w-[100%]  text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl relative'>
+                                            <p>this is my comment ok bro this is my comment ok bro
+                                            this is my comment ok brothis is my comment ok brothis is my comment ok bro
+                                            this is my comment ok brothis is my comment ok brothis is my comment ok bro ok  
+                                            </p>
+                                            <div className='absolute right-0 bottom-[-15px] bg-customBlue min-w-10 rounded-xl p-1  flex justify-center  '>
+                                                <FaHeart className=" cursor-pointer text-red-800"/>
+                                                <p className='text-[10px]'>+20K</p>
+                                            </div>
+                                        </div>
+                                        <div className='flex px-3 text-gray sm:pt-1 sm:text-sm text-[12px] mb-3'>
+                                            <p>22d </p>
+                                            <p className='ml-4 cursor-pointer hover:underline' >Like</p>
+                                            <p className='ml-4 cursor-pointer hover:underline'>Reply</p> 
+                                        </div>
+                                        <div className=" relative mb-10 ">
+                                            <div className="relative mb-10 ">
+                                                <div className='bg-login w-full z-50 absolute'>
+                                                    <p className='z-50'>see all reply</p>
+                                                </div>
+                                                <div  className='absolute sm:h-5 sm:w-9 h-5 570:w-[30px]  w-[70px] border-l-2 border-b-2 border-network rounded-bl-xl top-[-7px] sm:left-[-37px] left-[-27.5px]'></div>
+                                            </div>
+                                        </div>
+                                       <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative z-10'>
+                                            <input type="text" placeholder='Write a comment ...' className='w-full h-9 rounded-xl bg-searchBar pl-5 absolute top-[40px] left-0  pr-[45px]' />
+                                            <IoSend className="absolute top-12 right-3 text-gray  text-[19px] cursor-pointer" />
+                                       </div>
+                                    </div>
+                                    
+                                </div>
                                 <div className='flex  w-full min-h-[50px] mb-10 sm:text-md text-sm  '>
                                    
                                     <div className='sm:w-auto w-[37px]   flex flex-col '>

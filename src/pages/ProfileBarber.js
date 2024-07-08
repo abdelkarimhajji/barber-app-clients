@@ -1,5 +1,6 @@
 import NavBar from "../components/NavBar";
 import BottomMenu from "../components/BottomMenu";
+import AllPosts from "../components/AllPosts";
 import beard from '../imgs/beard.jpg';
 import { IoIosPersonAdd } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
@@ -7,8 +8,8 @@ import { BsPersonFillCheck } from "react-icons/bs";
 import { IoMdHeartDislike } from "react-icons/io";
 function ProfileBarber(){
     return (
-        <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
-            <div className="bg-customBlue h-full min-h-screen w-full lg:w-[70%] 2xl:w-[1000px] box-border relative ">
+        <div className="bg-login w-full  min-h-screen h-auto flex justify-center ">
+            <div className="bg-customBlue h-full min-h-screen w-full lg:w-[70%] 2xl:w-[1000px] box-border relative">
                 <NavBar />
                 <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
                 
@@ -26,7 +27,7 @@ function ProfileBarber(){
                         </div>
                             
                     </div>
-                    <div className="w-full pl-[245px] pt-[25px] relative text-white  z-10">
+                    <div className="w-full pl-[245px] pt-[25px] relative text-white  z-10 mb-[100px]">
                         <p className="font-bold text-lg">Abdelkarim Hajji</p>
                         <div className="flex">
                             <div className="flex items-center">
@@ -48,8 +49,11 @@ function ProfileBarber(){
 
 
 
+                <div className="flex w-full bg-red-900">
+                    <div className="w-[30%] h-[200px] bg-green-800"></div>
+                    <AllPosts />
 
-
+                </div>
 
                 <BottomMenu location="posts"/>
                 <div className='mb-[120px]'>
