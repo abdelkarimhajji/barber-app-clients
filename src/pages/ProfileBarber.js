@@ -53,7 +53,7 @@ function ProfileBarber(){
 
 
 
-                <div className="flex w-full  justify-around">
+                <div className="flex w-full justify-center">
                     <div className="w-[35%] h-[400px] bg-green-800"></div>
                     <AllPosts />
                 </div>
