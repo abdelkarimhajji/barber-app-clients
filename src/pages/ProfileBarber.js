@@ -9,13 +9,13 @@ import { IoMdHeartDislike } from "react-icons/io";
 import { IoCalendarSharp } from "react-icons/io5";
 function ProfileBarber(){
     return (
-        <div className="bg-login w-full  min-h-screen h-auto flex justify-center ">
+        <div className="bg-login w-full  min-h-screen h-auto flex justify-center overflow-y-scroll">
             <div className="bg-customBlue h-full min-h-screen w-full lg:w-[70%] 2xl:w-[1000px] box-border relative">
                 <NavBar />
                 <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
                 
-                <div className="w-full flex items-center flex-col">
-                    <div className="w-[90%] h-[300px] bg-red-400 relative rounded-xl">
+                <div className="w-full flex items-center flex-col z-20 relative">
+                    <div className="w-[90%] h-[300px]  relative rounded-xl">
                         <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl"/>
                         <div className="w-[140px] h-[140px] bg-customBlue    rounded-full absolute top-[260px] left-10 flex items-center justify-center">
                             <div className="w-[130px] h-[130px] rounded-full">
@@ -28,9 +28,9 @@ function ProfileBarber(){
                         </div>
                             
                     </div>
-                    <div className="w-full pl-[245px] pt-[25px] relative text-white  z-10 mb-[100px]">
+                    <div className="w-full pl-[245px] pt-[25px] relative text-white  z-20 mb-[100px] ">
                         <p className="font-bold text-lg">Abdelkarim Hajji</p>
-                        <div className="flex">
+                        <div className="flex ">
                             <div className="flex items-center">
                                 <p className="480:text-[15px] text-gray">20K </p>
                                 <IoIosPersonAdd className='text-[13px] 480:text-[19px] ml-1  text-green-700 transition-all'/>
@@ -53,10 +53,34 @@ function ProfileBarber(){
 
 
 
-                <div className="flex w-full justify-center">
-                    <div className="w-[35%] h-[400px] bg-green-800"></div>
-                    <AllPosts />
+                <div className="flex w-full   relative ">
+                    <div className="bg-red-600 w-[40%] h-[500px]">
+                    </div>
+                    <div className="bg-green-600 w-[17.9%] h-auto top-[680px] fixed"> 
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                        <p>karim i am here come to me ok we will me there</p>
+                    </div>  
+                    <div className="w-[70%]">
+                        <AllPosts />
+                        <AllPosts />
+                    </div>
                 </div>
+                
+
+                
+
+                
+
+
 
                 <BottomMenu location="posts"/>
                 <div className='mb-[120px]'>
