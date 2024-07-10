@@ -2,6 +2,7 @@ import {useEffect, useRef} from 'react';
 import NavBar from "../components/NavBar";
 import BottomMenu from "../components/BottomMenu";
 import AllPosts from "../components/AllPosts";
+import PostsBarber from "../components/PostsBarber";
 import beard from '../imgs/beard.jpg';
 import { IoIosPersonAdd } from "react-icons/io";
 import { FaHeart } from "react-icons/fa";
@@ -95,8 +96,8 @@ function ProfileBarber(){
             </div>
             <div className="w-[70%]">
              
-                <AllPosts />
-                <AllPosts />
+                <PostsBarber/>
+                <PostsBarber/>
             </div>
             </div>
 
