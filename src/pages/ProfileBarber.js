@@ -17,11 +17,11 @@ function ProfileBarber(){
   useEffect(() => {
     const handleScroll = () => {
         console.log("Current scroll position:", window.pageYOffset);
-        if(window.pageYOffset >= 497)
+        if(window.pageYOffset >= 530)
         {
-            movableDivRef.current.style.top = `${window.pageYOffset - 485}px`;
+            movableDivRef.current.style.top = `${window.pageYOffset - 530}px`;
         }
-        else if(window.pageYOffset < 500)
+        else if(window.pageYOffset < 530)
         {
             movableDivRef.current.style.top = `0px`;
         }
@@ -36,13 +36,13 @@ function ProfileBarber(){
 
     return (
     <div className="bg-login w-full min-h-screen h-auto flex justify-center overflow-y-auto">
-        <div className="bg-customBlue h-full min-h-screen w-full lg:w-[70%] 2xl:w-[1000px] box-border relative">
+        <div className="bg-customBlue h-full min-h-screen flex flex-col items-center w-full lg:w-[70%] 2xl:w-[1000px] box-border relative">
             <NavBar />
             <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
 
-            <div className="w-full flex items-center flex-col z-20 relative">
-            <div className="w-[90%] h-[300px] relative rounded-xl">
-                <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl" />
+            <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-login relative mb-[100px] pt-7 pb-[80px]">
+            <div className="w-[94%] h-[300px] relative rounded-xl">
+                <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl " />
                 <div className="w-[140px] h-[140px] bg-customBlue rounded-full absolute top-[260px] left-10 flex items-center justify-center">
                 <div className="w-[130px] h-[130px] rounded-full">
                     <img src={beard} alt="" className="w-full h-full object-cover rounded-full" />
@@ -53,7 +53,7 @@ function ProfileBarber(){
                 </div>
             </div>
 
-            <div className="w-full pl-[245px] pt-[25px] relative text-white z-20 mb-[100px] ">
+            <div className="w-full pl-[245px] pt-[25px] relative text-white z-20  ">
                 <p className="font-bold text-lg">Abdelkarim Hajji</p>
                 <div className="flex">
                 <div className="flex items-center">
@@ -66,7 +66,7 @@ function ProfileBarber(){
                 </div>
                 </div>
                 <div className="flex absolute right-14 bottom-0 w-[280px] justify-around">
-                <button type="button" className="w-[125px] py-1.5 rounded-xl bg-login flex justify-center items-center ">
+                <button type="button" className="w-[125px] py-1.5 rounded-xl bg-customBlue flex justify-center items-center ">
                     <BsPersonFillCheck className="" /> <span className="ml-2">Friends</span>
                 </button>
                 <button type="button" className="w-[125px] py-1.5 rounded-xl bg-red-700 flex justify-center items-center ">
@@ -81,21 +81,25 @@ function ProfileBarber(){
             </div>
             </div>
 
-            <div className="flex w-full relative">
-            <div ref={movableDivRef} className=" w-[44%] h-[500px] relative px-4 ">
-              <div className='mb-6 px-2'>
+            <div className="flex w-full relative justify-center">
+            <div ref={movableDivRef} className="w-[37%] h-[450px] relative px-1 rounded-xl ">
+              <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                 <p className='text-white font-bold text-xl'>Photos</p>
               </div>
-              <div className='grid grid-cols-2 gap-4 w-full justify-around'>
-                <div className='w-[170px] h-[170px] bg-green-800 rounded-xl'></div>
-                <div className='w-[170px] h-[170px] bg-green-800 rounded-xl'></div>
+              <div className='grid grid-cols-2 gap-4 w-full justify-around bg-login p-4 rounded-xl'>
+                <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
+                 <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
                 {/* Uncomment if you want more divs */}
-                <div className='w-[170px] h-[170px] bg-green-800 rounded-xl'></div>
-                <div className='w-[170px] h-[170px] bg-green-800 rounded-xl'></div>
+                 <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
+                 <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
+                {/* <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div>
+                <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div> */}
                 </div>
             </div>
-            <div className="w-[70%]">
-             
+            <div className="w-[57%]  flex flex-col items-center">
+                <div className='mb-3 px-4 py-2.5 bg-login rounded-xl w-[90%]'>
+                    <p className='text-white font-bold text-xl'>Posts</p>
+                 </div>
                 <PostsBarber/>
                 <PostsBarber/>
             </div>
