@@ -10,6 +10,9 @@ import { BsPersonFillCheck } from "react-icons/bs";
 import { IoMdHeartDislike } from "react-icons/io";
 import { IoCalendarSharp } from "react-icons/io5";
 import { ImLocation2 } from "react-icons/im";
+import { FaFacebookF } from "react-icons/fa6";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { FaTiktok } from "react-icons/fa6";
 
 function ProfileBarber(){
 
@@ -19,9 +22,9 @@ function ProfileBarber(){
   useEffect(() => {
     const handleScroll = () => {
         console.log("Current scroll position:", window.pageYOffset);
-        if(window.pageYOffset >= 930)
+        if(window.pageYOffset >= 970)
         {
-            movableDivRef.current.style.top = `${window.pageYOffset - 930}px`;
+            movableDivRef.current.style.top = `${window.pageYOffset - 970}px`;
         }
         else if(window.pageYOffset < 930)
         {
@@ -148,11 +151,28 @@ function ProfileBarber(){
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Location</p>
                     </div>
-                    <div className='p-3 bg-login rounded-xl'>
-                        <div className='flex items-center text-white'>
-                            <ImLocation2 />
-                            <span> - </span>
-                            <p className='cursor-pointer'>Tnagier, ras msallah</p>
+                    <div className='p-3 bg-login rounded-xl mb-3'>
+                        <div className='flex items-center text-gray'>
+                            <ImLocation2 className='text-white'/>
+                            <span className='text-white'>/</span>
+                            <p className='cursor-pointer ml-1'>Tnagier, ras msallah</p>
+                        </div>
+                    </div>
+                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
+                        <p className='text-white font-bold text-xl'>Social Media</p>
+                    </div>
+                    <div className='p-3 bg-login rounded-xl mb-3'>
+                        <div className='flex items-center text-gray mb-2.5'>
+                            <FaFacebookF  className='text-white'/>
+                            <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
+                        </div>
+                        <div className='flex items-center text-gray mb-2.5'>
+                            <BiLogoInstagramAlt className='text-white'/>
+                            <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
+                        </div>
+                        <div className='flex items-center text-gray mb-2.5'>
+                            <FaTiktok className='text-white'/>
+                            <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
                         </div>
                     </div>
                 </div>
