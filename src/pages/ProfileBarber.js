@@ -17,11 +17,11 @@ function ProfileBarber(){
   useEffect(() => {
     const handleScroll = () => {
         console.log("Current scroll position:", window.pageYOffset);
-        if(window.pageYOffset >= 530)
+        if(window.pageYOffset >= 930)
         {
-            movableDivRef.current.style.top = `${window.pageYOffset - 530}px`;
+            movableDivRef.current.style.top = `${window.pageYOffset - 930}px`;
         }
-        else if(window.pageYOffset < 530)
+        else if(window.pageYOffset < 930)
         {
             movableDivRef.current.style.top = `0px`;
         }
@@ -81,10 +81,63 @@ function ProfileBarber(){
             </div>
             </div>
 
-            <div className="flex w-full  px-2 justify-center h-[150px]">
-                <div className='w-[37%]  relative px-1 rounded-xl '>
+            <div className="flex w-full  px-2 justify-center min-h-[150px] mb-[50px] pl-8">
+                <div className='min-w-[48%]   relative px-1 rounded-xl '>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Open Time</p>
+                    </div>
+                    <div className='grid grid-cols-3 gap-x-5 gap-y-4  text-white bg-login p-4 pl-5 pr-6 rounded-xl'>
+                        <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                           <p className='text-green-600 mb-1'>Monday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
+                                <p className='relative ml-0.5'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+                        <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                           <p className='text-green-600 mb-1'>Tuesday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
+                                <p className='relative ml-0.5'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+                        <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                           <p className='text-green-600 mb-1'>Wednesday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
+                                <p className='relative ml-0.5'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+                        <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                           <p className='text-green-600 mb-1'>thurshday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
+                                <p className='relative ml-0.5'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+                        <div className='w-[130px] rounded-xl h-[60px] bg-red-950 box-border p-1 pl-2 text-[13px]'>
+                           <p className='text-green-600 mb-1'>Friday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
+                                <p className='relative ml-0.5'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+                        <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                           <p className='text-green-600 mb-1'>Saturday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
+                                <p className='relative ml-0.5'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+                        <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                           <p className='text-green-600 mb-1'>Sunday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
+                                <p className='relative ml-0.5'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+
+
                     </div>
                 </div>
                 <div className="w-[57%]  flex flex-col items-center">
