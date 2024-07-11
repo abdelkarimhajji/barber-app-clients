@@ -81,29 +81,43 @@ function ProfileBarber(){
             </div>
             </div>
 
-            <div className="flex w-full relative justify-center">
-            <div ref={movableDivRef} className="w-[37%] h-[450px] relative px-1 rounded-xl ">
-              <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
-                <p className='text-white font-bold text-xl'>Photos</p>
-              </div>
-              <div className='grid grid-cols-2 gap-4 w-full justify-around bg-login p-4 rounded-xl'>
-                <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
-                 <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
-                {/* Uncomment if you want more divs */}
-                 <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
-                 <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
-                {/* <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div>
-                <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div> */}
+            <div className="flex w-full  px-2 justify-center h-[150px]">
+                <div className='w-[37%]  relative px-1 rounded-xl '>
+                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
+                        <p className='text-white font-bold text-xl'>Open Time</p>
+                    </div>
+                </div>
+                <div className="w-[57%]  flex flex-col items-center">
                 </div>
             </div>
-            <div className="w-[57%]  flex flex-col items-center">
-                <div className='mb-3 px-4 py-2.5 bg-login rounded-xl w-[90%]'>
-                    <p className='text-white font-bold text-xl'>Posts</p>
-                 </div>
-                <PostsBarber/>
-                <PostsBarber/>
+
+            <div className="flex w-full relative justify-center px-1">
+                <div ref={movableDivRef} className="w-[37%] h-[450px] relative px-1 rounded-xl ">
+                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
+                        <p className='text-white font-bold text-xl'>Photos</p>
+                    </div>
+                    <div className='grid grid-cols-2 gap-4 w-full justify-around bg-login p-4 rounded-xl'>
+                        <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
+                        <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
+                        {/* Uncomment if you want more divs */}
+                        <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
+                        <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'><img src={beard} alt="" className='w-full h-full object-cover rounded-xl' /></div>
+                        {/* <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div>
+                        <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div> */}
+                    </div>
+                </div>
+                <div className="w-[57%]  flex flex-col items-center">
+                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl w-[90%]'>
+                        <p className='text-white font-bold text-xl'>Posts</p>
+                    </div>
+                    <PostsBarber/>
+                    <PostsBarber/>
+                </div>
             </div>
-            </div>
+
+
+
+            
 
             <BottomMenu location="posts" />
             <div className='mb-[120px]'></div>
