@@ -45,7 +45,7 @@ function ProfileBarber(){
             <NavBar />
             <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
 
-            <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-login relative mb-[100px] pt-7 pb-[80px]">
+            <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-login relative mb-[50px] pt-7 pb-[80px]">
             <div className="w-[94%] h-[300px] relative rounded-xl">
                 <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl " />
                 <div className="w-[140px] h-[140px] bg-customBlue rounded-full absolute top-[260px] left-10 flex items-center justify-center">
@@ -87,7 +87,7 @@ function ProfileBarber(){
             </div>
             </div>
 
-            <div className="flex w-full  px-2 justify-around min-h-[150px] mb-[50px] pl-4 box-border">
+            <div className="flex w-full  px-10 justify-around min-h-[150px] mb-[50px]  box-border ">
                 <div className='min-w-[47%]   relative px-1 rounded-xl '>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Open Time</p>
@@ -151,7 +151,7 @@ function ProfileBarber(){
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Location</p>
                     </div>
-                    <div className='p-3 bg-login rounded-xl mb-3'>
+                    <div className='p-3 bg-login rounded-xl mb-3 pb-5'>
                         <div className='flex items-center text-gray'>
                             <ImLocation2 className='text-white'/>
                             <span className='text-white'>/</span>
@@ -170,7 +170,7 @@ function ProfileBarber(){
                             <BiLogoInstagramAlt className='text-white'/>
                             <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
                         </div>
-                        <div className='flex items-center text-gray mb-2.5'>
+                        <div className='flex items-center text-gray '>
                             <FaTiktok className='text-white'/>
                             <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
                         </div>
@@ -178,8 +178,8 @@ function ProfileBarber(){
                 </div>
             </div>
 
-            <div className="flex w-full relative justify-center px-1">
-                <div ref={movableDivRef} className="w-[37%] h-[450px] relative px-1 rounded-xl ">
+            <div className="flex w-full relative justify-center px-9">
+                <div ref={movableDivRef} className="w-[40%] h-[450px] relative  rounded-xl ">
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Photos</p>
                     </div>
@@ -193,7 +193,7 @@ function ProfileBarber(){
                         <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div> */}
                     </div>
                 </div>
-                <div className="w-[57%]  flex flex-col items-center">
+                <div className="w-[57%]  flex flex-col items-end">
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl w-[90%]'>
                         <p className='text-white font-bold text-xl'>Posts</p>
                     </div>

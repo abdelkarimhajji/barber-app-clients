@@ -36,7 +36,7 @@ function PostsBarber() {
 
     return (
         <>
-        <div className="w-[100%] flex  items-center h-auto justify-center flex-col " >
+        <div className="w-[100%] flex  items-end h-auto justify-center flex-col " >
             {/* start post */}
             <div className="w-[90%]   h-auto  mb-10 bg-login rounded-xl   " >
                 {/* start top of post */}
