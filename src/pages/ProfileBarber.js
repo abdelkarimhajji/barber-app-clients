@@ -9,6 +9,8 @@ import { FaHeart } from "react-icons/fa";
 import { BsPersonFillCheck } from "react-icons/bs";
 import { IoMdHeartDislike } from "react-icons/io";
 import { IoCalendarSharp } from "react-icons/io5";
+import { ImLocation2 } from "react-icons/im";
+
 function ProfileBarber(){
 
 
@@ -54,7 +56,8 @@ function ProfileBarber(){
             </div>
 
             <div className="w-full pl-[245px] pt-[25px] relative text-white z-20  ">
-                <p className="font-bold text-lg">Abdelkarim Hajji</p>
+                <p className="font-bold text-xl">Salon DODO</p>
+                <p className="text-sm">Abdelkarim Hajji</p>
                 <div className="flex">
                 <div className="flex items-center">
                     <p className="480:text-[15px] text-gray">20K </p>
@@ -81,8 +84,8 @@ function ProfileBarber(){
             </div>
             </div>
 
-            <div className="flex w-full  px-2 justify-center min-h-[150px] mb-[50px] pl-8">
-                <div className='min-w-[48%]   relative px-1 rounded-xl '>
+            <div className="flex w-full  px-2 justify-around min-h-[150px] mb-[50px] pl-4 box-border">
+                <div className='min-w-[47%]   relative px-1 rounded-xl '>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Open Time</p>
                     </div>
@@ -140,7 +143,18 @@ function ProfileBarber(){
 
                     </div>
                 </div>
-                <div className="w-[57%]  flex flex-col items-center">
+
+                <div className='min-w-[45%]   relative px-1 rounded-xl h-[100px] '>
+                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
+                        <p className='text-white font-bold text-xl'>Location</p>
+                    </div>
+                    <div className='p-3 bg-login rounded-xl'>
+                        <div className='flex items-center text-white'>
+                            <ImLocation2 />
+                            <span> - </span>
+                            <p className='cursor-pointer'>Tnagier, ras msallah</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
