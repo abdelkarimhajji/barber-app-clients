@@ -8,7 +8,7 @@ function Barbers(){
     }, []);
     return(
     <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
-        <div className="bg-customBlue min-h-screen h-full w-full lg:w-[70%] 2xl:w-[1000px] box-border relative ">
+        <div className="bg-customBlue min-h-screen h-full w-full md:w-[100%] lg:w-[1000px] box-border relative ">
             <NavBar />
             <div className="mt-[180px] 324:mt-[160px] 480:mt-[200px]"></div>
             <NearestBarbers/>

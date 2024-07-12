@@ -41,7 +41,7 @@ function ProfileBarber(){
 
     return (
     <div className="bg-login w-full min-h-screen h-auto flex justify-center overflow-y-auto">
-        <div className="bg-customBlue h-full min-h-screen flex flex-col items-center w-full lg:w-[70%] 2xl:w-[1000px] box-border relative">
+        <div className="bg-customBlue h-full min-h-screen flex flex-col items-center w-full md:w-[100%] lg:w-[1000px] box-border relative">
             <NavBar />
             <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
 
@@ -88,11 +88,11 @@ function ProfileBarber(){
             </div>
 
             <div className="flex w-full  px-10 justify-around min-h-[150px] mb-[50px]  box-border ">
-                <div className='min-w-[47%]   relative px-1 rounded-xl box-border'>
+                <div className='w-[52.5%]   relative px-1 rounded-xl box-border '>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Open Time</p>
                     </div>
-                    <div className='grid grid-cols-3 gap-x-5 gap-y-4  text-white bg-login p-5   rounded-xl box-border   '>
+                    <div className='grid grid-cols-3 gap-x-5 gap-y-4  text-white bg-login  p-5   rounded-xl box-border'>
                         <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Monday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
