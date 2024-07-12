@@ -22,9 +22,9 @@ function ProfileBarber(){
   useEffect(() => {
     const handleScroll = () => {
         console.log("Current scroll position:", window.pageYOffset);
-        if(window.pageYOffset >= 970)
+        if(window.pageYOffset >= 910)
         {
-            movableDivRef.current.style.top = `${window.pageYOffset - 970}px`;
+            movableDivRef.current.style.top = `${window.pageYOffset - 910}px`;
         }
         else if(window.pageYOffset < 930)
         {
@@ -88,11 +88,11 @@ function ProfileBarber(){
             </div>
 
             <div className="flex w-full  px-10 justify-around min-h-[150px] mb-[50px]  box-border ">
-                <div className='min-w-[47%]   relative px-1 rounded-xl '>
+                <div className='min-w-[47%]   relative px-1 rounded-xl box-border'>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Open Time</p>
                     </div>
-                    <div className='grid grid-cols-3 gap-x-5 gap-y-4  text-white bg-login p-4 pl-5 pr-6 rounded-xl'>
+                    <div className='grid grid-cols-3 gap-x-5 gap-y-4  text-white bg-login p-5   rounded-xl box-border   '>
                         <div className='w-[130px] rounded-xl h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Monday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
@@ -152,27 +152,27 @@ function ProfileBarber(){
                         <p className='text-white font-bold text-xl'>Location</p>
                     </div>
                     <div className='p-3 bg-login rounded-xl mb-3 pb-5'>
-                        <div className='flex items-center text-gray'>
+                        <div className='flex items-center justify-center text-gray'>
                             <ImLocation2 className='text-white'/>
-                            <span className='text-white'>/</span>
+                            {/* <span className='text-white'>/</span> */}
                             <p className='cursor-pointer ml-1'>Tnagier, ras msallah</p>
                         </div>
                     </div>
-                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
+                    <div className='mb-4 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Social Media</p>
                     </div>
-                    <div className='p-3 bg-login rounded-xl mb-3'>
-                        <div className='flex items-center text-gray mb-2.5'>
-                            <FaFacebookF  className='text-white'/>
-                            <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
+                    <div className='rounded-xl  mb-3'>
+                        <div className='flex w-full justify-around'>
+                            <div className='flex items-center justify-center bg-login w-[40%] h-[50px] rounded-xl text-gray mb-2.5'>
+                                <FaFacebookF  className='text-white text-[20px]'/>
+                            </div>
+                            <div className='flex items-center justify-center bg-login w-[40%] h-[50px] rounded-xl text-gray mb-2.5'>
+                                <BiLogoInstagramAlt className='text-white text-[20px]'/>
+                            </div>
                         </div>
-                        <div className='flex items-center text-gray mb-2.5'>
-                            <BiLogoInstagramAlt className='text-white'/>
-                            <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
-                        </div>
-                        <div className='flex items-center text-gray '>
-                            <FaTiktok className='text-white'/>
-                            <p className='cursor-pointer ml-1'> <span className='text-white'>/</span> Abdelkarim hajji</p>
+                        
+                        <div className='flex items-center justify-center bg-login w-[90%] m-auto h-[50px] rounded-xl text-gray '>
+                            <FaTiktok className='text-white text-[20px]'/>
                         </div>
                     </div>
                 </div>
