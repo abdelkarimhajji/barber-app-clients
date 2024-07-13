@@ -146,32 +146,34 @@ function ProfileBarber(){
                     </div>
                 </div>
 
-                <div className='980:w-[45%] 800:w-[40%] w-full   relative px-1 rounded-xl h-[100px] 800:mb-0 mb-[200px]'>
+                <div className='980:w-[45%] 800:w-[40%] w-full   px-1 rounded-xl h-[100px] 800:mb-0 mb-[200px]'>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Info</p>
                     </div>
-                    <div className='p-3 bg-login rounded-xl mb-3 pb-5 h-[250px]'>
-                        <div className='flex items-center justify-center text-gray'>
-                            <ImLocation2 className='text-white'/>
-                            {/* <span className='text-white'>/</span> */}
-                            <p className='cursor-pointer ml-1'>Tnagier, ras msallah</p>
-                        </div>
-                        <div className='rounded-xl  mb-3'>
-                        <div className='flex w-full justify-around'>
-                            <div className='flex items-center justify-center bg-login w-[40%] h-[50px] rounded-xl text-gray mb-2.5'>
-                                <FaFacebookF  className='text-white text-[20px]'/>
-                            </div>
-                            <div className='flex items-center justify-center bg-login w-[40%] h-[50px] rounded-xl text-gray mb-2.5'>
-                                <BiLogoInstagramAlt className='text-white text-[20px]'/>
-                            </div>
-                        </div>
-                        
-                        <div className='flex items-center justify-center bg-login w-[90%] m-auto h-[50px] rounded-xl text-gray '>
-                            <FaTiktok className='text-white text-[20px]'/>
-                        </div>
-                    </div>
-                    </div>
+                    <div className='w-[100%] flex justify-center  p-5 bg-login  mb-3 rounded-xl'>
+
                     
+                        <div className=' rounded-xl grid grid-cols-3  z-10 gap-x-5 gap-y-4 w-[100%] text-white box-border '>
+                            
+                            <div className='980:w-[110px] w-[100%]  group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                                <ImLocation2 className='text-xl z-10 '/>
+                                <div className='w-3 h-3 bg-white  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                            </div>
+                            <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                                <FaFacebookF  className='text-xl z-10'/>
+                                <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                            </div>
+                            <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                                <BiLogoInstagramAlt  className='text-xl z-10'/>
+                                <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                            </div>
+                            <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                                <FaTiktok  className='text-xl z-10'/>
+                                <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
