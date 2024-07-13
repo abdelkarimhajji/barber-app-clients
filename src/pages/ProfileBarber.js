@@ -24,17 +24,11 @@ function ProfileBarber(){
         console.log("Current scroll position:", window.pageYOffset);
         console.log("Current window width:", window.innerWidth); // Log the window width
         if(window.pageYOffset >= 910 && window.innerWidth > 800)
-        {
             movableDivRef.current.style.top = `${window.pageYOffset - 910}px`;
-        }
         if(window.innerWidth < 800)
-        {
             movableDivRef.current.style.top = `0px`;
-        }
         else if(window.pageYOffset < 930)
-        {
             movableDivRef.current.style.top = `0px`;
-        }
     };
 
     // Add the scroll event listener to the window
@@ -154,19 +148,15 @@ function ProfileBarber(){
 
                 <div className='980:w-[45%] 800:w-[40%] w-full   relative px-1 rounded-xl h-[100px] 800:mb-0 mb-[200px]'>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
-                        <p className='text-white font-bold text-xl'>Location</p>
+                        <p className='text-white font-bold text-xl'>Info</p>
                     </div>
-                    <div className='p-3 bg-login rounded-xl mb-3 pb-5'>
+                    <div className='p-3 bg-login rounded-xl mb-3 pb-5 h-[250px]'>
                         <div className='flex items-center justify-center text-gray'>
                             <ImLocation2 className='text-white'/>
                             {/* <span className='text-white'>/</span> */}
                             <p className='cursor-pointer ml-1'>Tnagier, ras msallah</p>
                         </div>
-                    </div>
-                    <div className='mb-4 px-4 py-2.5 bg-login rounded-xl '>
-                        <p className='text-white font-bold text-xl'>Social Media</p>
-                    </div>
-                    <div className='rounded-xl  mb-3'>
+                        <div className='rounded-xl  mb-3'>
                         <div className='flex w-full justify-around'>
                             <div className='flex items-center justify-center bg-login w-[40%] h-[50px] rounded-xl text-gray mb-2.5'>
                                 <FaFacebookF  className='text-white text-[20px]'/>
@@ -180,6 +170,8 @@ function ProfileBarber(){
                             <FaTiktok className='text-white text-[20px]'/>
                         </div>
                     </div>
+                    </div>
+                    
                 </div>
             </div>
 
