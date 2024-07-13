@@ -92,49 +92,49 @@ function ProfileBarber(){
                         <p className='text-white font-bold text-xl'>Open Time</p>
                     </div>
                     <div className='grid grid-cols-3 gap-x-5 gap-y-4  text-white bg-login  p-5   rounded-xl box-border'>
-                        <div className='980:w-[130px] w-[100%] rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Monday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
-                        <div className='980:w-[130px] w-[100%] rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Tuesday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
-                        <div className='980:w-[130px] w-[100%] rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Wednesday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
-                        <div className='980:w-[130px] w-[100%] rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>thurshday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full'>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
-                        <div className='980:w-[130px] w-[100%] rounded-xl min-h-[60px] bg-red-950 box-border p-1 pl-2 text-[13px]'>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-red-950 box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Friday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
-                        <div className='980:w-[130px] w-[100%] rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Saturday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
-                        <div className='980:w-[130px] w-[100%] rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer  rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                            <p className='text-green-600 mb-1'>Sunday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold'> − </span></p>
@@ -157,19 +157,19 @@ function ProfileBarber(){
                             
                             <div className='980:w-[110px] w-[100%]  group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <ImLocation2 className='text-xl z-10 '/>
-                                <div className='w-3 h-3 bg-white  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                                {/* <div className='w-3 h-3 bg-white  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
                             </div>
                             <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <FaFacebookF  className='text-xl z-10'/>
-                                <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                                {/* <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
                             </div>
                             <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <BiLogoInstagramAlt  className='text-xl z-10'/>
-                                <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                                {/* <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
                             </div>
                             <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <FaTiktok  className='text-xl z-10'/>
-                                <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div>
+                                {/* <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
                             </div>
                         </div>
 
