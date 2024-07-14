@@ -44,9 +44,9 @@ function ProfileBarber(){
             <NavBar />
             <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
 
-            <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-red-500 relative mb-[50px] pt-7 800:pb-[80px] pb-[200px]">
-                <div className="w-[94%] h-[300px] relative rounded-xl ">
-                    <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl " />
+            <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-red-500 relative mb-[50px] 800:pt-7 pt-5 800:pb-[80px] pb-[200px]">
+                <div className="w-[94%] 586:h-[300px] 431:h-[200px] h-[150px] relative rounded-xl ">
+                    <img src={beard} alt="" className="w-full 586:h-[300px] 431:h-[200px] h-[150px] object-cover rounded-xl " />
                     <div className='w-full h-[200px] absolute bottom-[-150px] 800:pl-[40px] pl-0 flex 800:justify-start justify-center'>
                         <div className="w-[140px] h-[140px] bg-customBlue rounded-full   flex items-center justify-center">
                             <div className="w-[130px] h-[130px] rounded-full relative">
