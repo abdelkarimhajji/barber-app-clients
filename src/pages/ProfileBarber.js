@@ -177,8 +177,8 @@ function ProfileBarber(){
                 </div>
             </div>
 
-            <div className="flex w-full relative justify-center px-9">
-                <div ref={movableDivRef} className="w-[40%] h-[450px] relative  rounded-xl ">
+            <div className="800:flex w-full relative justify-center px-9 ">
+                <div ref={movableDivRef} className="800:w-[40%]  h-[450px] relative  w-full rounded-xl ">
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Photos</p>
                     </div>
@@ -192,8 +192,8 @@ function ProfileBarber(){
                         <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div> */}
                     </div>
                 </div>
-                <div className="w-[57%]  flex flex-col items-end">
-                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl w-[90%]'>
+                <div className="800:w-[57%] w-full  bg-red-100 flex flex-col 800:items-end ">
+                    <div className='mb-3 px-4 py-2.5 bg-login rounded-xl 800:w-[90%] w-full'>
                         <p className='text-white font-bold text-xl'>Posts</p>
                     </div>
                     <PostsBarber/>
