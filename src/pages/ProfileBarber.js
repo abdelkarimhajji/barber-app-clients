@@ -47,11 +47,11 @@ function ProfileBarber(){
             <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-red-500 relative mb-[50px] pt-7 800:pb-[80px] pb-[200px]">
                 <div className="w-[94%] h-[300px] relative rounded-xl ">
                     <img src={beard} alt="" className="w-full h-[300px] object-cover rounded-xl " />
-                    <div className='w-full h-[200px] absolute bottom-[-150px] 800:pl-[40px] pl-0 flex justify-center'>
+                    <div className='w-full h-[200px] absolute bottom-[-150px] 800:pl-[40px] pl-0 flex 800:justify-start justify-center'>
                         <div className="w-[140px] h-[140px] bg-customBlue rounded-full   flex items-center justify-center">
-                            <div className="w-[130px] h-[130px] rounded-full">
+                            <div className="w-[130px] h-[130px] rounded-full relative">
                                 <img src={beard} alt="" className="w-full h-full object-cover rounded-full" />
-                                <div className="w-[25px] h-[25px] bg-customBlue absolute bottom-[68px] left-[147px] rounded-full flex items-center justify-center">
+                                <div className="w-[25px] h-[25px] bg-customBlue absolute bottom-[10px] right-[-2px] rounded-full flex items-center justify-center">
                                     <div className="w-[17px] h-[17px] bg-green-700 rounded-full"></div>
                                 </div>
                             </div>
