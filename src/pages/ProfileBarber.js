@@ -192,7 +192,7 @@ function ProfileBarber(){
                         <div className='w-[100%] h-[160px] bg-green-800 rounded-xl'></div> */}
                     </div>
                 </div>
-                <div className="800:w-[57%] w-full  bg-red-100 flex flex-col 800:items-end ">
+                <div className="800:w-[57%] w-full flex flex-col 800:items-end ">
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl 800:w-[90%] w-full'>
                         <p className='text-white font-bold text-xl'>Posts</p>
                     </div>
