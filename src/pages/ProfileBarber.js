@@ -86,56 +86,56 @@ function ProfileBarber(){
             </div>
             </div>
 
-            <div className=" 800:flex w-full  px-10 justify-around min-h-[150px] 800:mb-[50px]  box-border ">
+            <div className=" 800:flex w-full  499:px-10 px-3 justify-around min-h-[150px] 800:mb-[50px]  box-border ">
                 <div className='980:w-[52.5%] 800:w-[60%] 800:mb-0 mb-[30px] w-full  relative px-1 rounded-xl box-border '>
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Open Time</p>
                     </div>
                     <div className='grid grid-cols-3 gap-x-5 gap-y-4  text-white bg-login  p-5   rounded-xl box-border'>
                         <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
-                           <p className='text-green-600 mb-1'>Monday</p>
+                           <p className='text-green-600 mb-1 overflow-hidden text-ellipsis'>Monday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
                         <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
-                           <p className='text-green-600 mb-1'>Tuesday</p>
+                           <p className='text-green-600 mb-1 overflow-hidden text-ellipsis'>Tuesday</p>
+                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
+                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
+                                <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
+                           </div>
+                        </div>
+                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px] overflow-hidden'>
+                           <p className='text-green-600 mb-1 w-[100%] overflow-hidden text-ellipsis'>Wednesday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
                         <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
-                           <p className='text-green-600 mb-1'>Wednesday</p>
-                           <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
-                                <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
-                                <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
-                           </div>
-                        </div>
-                        <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
-                           <p className='text-green-600 mb-1'>thurshday</p>
+                           <p className='text-green-600 mb-1 overflow-hidden text-ellipsis'>thurshday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full'>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
                         <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-red-950 box-border p-1 pl-2 text-[13px]'>
-                           <p className='text-green-600 mb-1'>Friday</p>
+                           <p className='text-green-600 mb-1 overflow-hidden text-ellipsis'>Friday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
                         <div className='980:w-[130px] w-[100%] cursor-pointer rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
-                           <p className='text-green-600 mb-1'>Saturday</p>
+                           <p className='text-green-600 mb-1 overflow-hidden text-ellipsis'>Saturday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
                            </div>
                         </div>
                         <div className='980:w-[130px] w-[100%] cursor-pointer  rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
-                           <p className='text-green-600 mb-1'>Sunday</p>
+                           <p className='text-green-600 mb-1 overflow-hidden text-ellipsis'>Sunday</p>
                            <div className='text-[11.5px] flex justify-center items-center flex-wrap w-full '>
                                 <p className='relative'>8:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>AM</span><span className='font-extrabold 499:inline hidden'> − </span></p>
                                 <p className='relative ml-0.5 mb-1'> 12:00<span className='text-[9px] text-green-600 relative top-0.5 font-bold'>PM</span></p>
@@ -177,7 +177,7 @@ function ProfileBarber(){
                 </div>
             </div>
 
-            <div className="800:flex w-full relative justify-center px-9 ">
+            <div className="800:flex w-full relative justify-center 499:px-9  px-3">
                 <div ref={movableDivRef} className="800:w-[40%]  h-[450px] relative  w-full rounded-xl ">
                     <div className='mb-3 px-4 py-2.5 bg-login rounded-xl '>
                         <p className='text-white font-bold text-xl'>Photos</p>
