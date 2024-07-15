@@ -158,21 +158,21 @@ function ProfileBarber(){
                     
                         <div className=' rounded-xl grid grid-cols-3  z-10 gap-x-5 gap-y-4 w-[100%] text-white box-border '>
                             
-                            <div className='980:w-[110px] w-[100%]  group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                            <div className='980:w-[110px] w-[100%] overflow-hidden  group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <ImLocation2 className='text-xl z-10 '/>
-                                {/* <div className='w-3 h-3 bg-white  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
+                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-green-700'></div>
                             </div>
-                            <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                            <div className='980:w-[110px] w-[100%] group overflow-hidden relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <FaFacebookF  className='text-xl z-10'/>
-                                {/* <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
+                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-green-700'></div>
                             </div>
-                            <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                            <div className='980:w-[110px] w-[100%] group overflow-hidden relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <BiLogoInstagramAlt  className='text-xl z-10'/>
-                                {/* <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
+                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-green-700'></div>
                             </div>
-                            <div className='980:w-[110px] w-[100%] group relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
+                            <div className='980:w-[110px] w-[100%] group overflow-hidden relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <FaTiktok  className='text-xl z-10'/>
-                                {/* <div className='w-3 h-3 bg-login  absolute right-[0px] bottom-[0px] group-hover:w-full group-hover:h-full group-hover:rounded-tl-xl group-hover:bg-login shadow-black2 rounded-tl-sm transition-all rounded-br-xl'></div> */}
+                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-green-700'></div>
                             </div>
                         </div>
 

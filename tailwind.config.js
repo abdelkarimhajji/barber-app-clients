@@ -52,6 +52,9 @@ module.exports = {
         '800': '800px',
         '1219': '1219px',
       },
+      rotate: {
+        '45': '45deg',
+      }
     },
   },
   plugins: [],
