@@ -44,7 +44,7 @@ function ProfileBarber(){
             <NavBar />
             <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
 
-            <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-login relative mb-[50px] 800:pt-7 pt-5 800:pb-[80px]  pb-[200px]">
+            <div className="w-[90%] flex items-center flex-col z-20  rounded-xl bg-login relative mb-[50px] 800:pt-7 pt-5 800:pb-[80px]  pb-[220px]">
                 <div className="w-[94%] 586:h-[300px] 431:h-[200px] h-[150px] relative rounded-xl ">
                     <img src={beard} alt="" className="w-full 586:h-[300px] 431:h-[200px] h-[150px] object-cover rounded-xl " />
                     <div className='w-full h-[200px] absolute bottom-[-150px] 800:pl-[40px] pl-0 flex 800:justify-start justify-center'>
@@ -60,7 +60,7 @@ function ProfileBarber(){
                     
                 </div>
 
-                <div className="w-full 800:pl-[245px] flex  flex-col items-center 800:items-start   pt-[25px] relative text-white z-20 800:top-0 top-[100px] 800:h-auto h-full  ">
+                <div className="w-full 800:pl-[245px] flex  flex-col items-center 800:items-start   pt-[25px] relative text-white z-20 800:top-0 top-[80px] 800:h-auto h-full  ">
                     <p className="font-bold text-xl">Salon DODO</p>
                     <p className="text-sm">Abdelkarim Hajji</p>
                     <div className="flex">
@@ -73,7 +73,7 @@ function ProfileBarber(){
                             <FaHeart className='text-[13px] 480:text-[15px] ml-1 text-red-700 transition-all' />
                         </div>
                     </div>
-                    <div className="flex absolute right-14 bottom-0 w-[280px] justify-around ">
+                    <div className="flex absolute 800:right-14 800:bottom-0 bottom-[-50px]   w-[280px] justify-around ">
                         <button type="button" className="w-[125px] h-[35px] rounded-xl bg-customBlue flex justify-center items-center ">
                             <BsPersonFillCheck className="" /> <span className="ml-2">Friends</span>
                         </button>
@@ -81,7 +81,7 @@ function ProfileBarber(){
                             <IoMdHeartDislike className="" /> <span className="ml-2">Like</span>
                         </button>
                     </div>
-                    <div className="flex absolute right-16 bottom-[-50px] bg-red-100 rounded-xl justify-center items-center w-[260px]">
+                    <div className="flex absolute 800:right-16 800:bottom-[-50px] bottom-[-100px] bg-red-100 rounded-xl justify-center items-center w-[260px]">
                         <button type="button" className="w-full py-1.5 rounded-xl bg-green-800 flex justify-center items-center ">
                             <IoCalendarSharp className="" /> <span className="ml-2">Appointment</span>
                         </button>
