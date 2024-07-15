@@ -29,6 +29,9 @@ module.exports = {
         searchBar: '#66707a',
         searchBar: '#66707a',
         network: '#3a3b3c',
+        facebook: '#0966ff',
+        instagram: '#ff1e30',
+        tiktok: '#4de0ee',
       },
       fontFamily: {
         signature: ['Pacifico', 'cursive'],

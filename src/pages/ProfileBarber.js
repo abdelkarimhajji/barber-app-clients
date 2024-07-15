@@ -164,15 +164,15 @@ function ProfileBarber(){
                             </div>
                             <div className='980:w-[110px] w-[100%] group overflow-hidden relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <FaFacebookF  className='text-xl z-10'/>
-                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-green-700'></div>
+                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-facebook'></div>
                             </div>
                             <div className='980:w-[110px] w-[100%] group overflow-hidden relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <BiLogoInstagramAlt  className='text-xl z-10'/>
-                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-green-700'></div>
+                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-instagram'></div>
                             </div>
                             <div className='980:w-[110px] w-[100%] group overflow-hidden relative cursor-pointer flex justify-center items-center rounded-xl min-h-[60px] bg-customBlue box-border p-1 pl-2 text-[13px]'>
                                 <FaTiktok  className='text-xl z-10'/>
-                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-green-700'></div>
+                                <div className='absolute w-[50px] h-[100px] right-[-40px] top-[0px] rotate-45 bg-tiktok'></div>
                             </div>
                         </div>
 
