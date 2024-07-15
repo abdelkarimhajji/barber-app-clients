@@ -9,7 +9,7 @@ function BottomMenu(location)   {
     console.log("location ",    location);
     const navigate = useNavigate();
     return (
-        <div className="fixed bottom-0 w-full  lg:w-[70%] 2xl:w-[1000px] sm:h-[100px]  h-[85px] z-50 flex justify-center items-start">
+        <div className="fixed bottom-0 w-full  lg:w-[70%] 2xl:w-[1000px] sm:h-[100px]  h-[85px] z-40 flex justify-center items-start">
             <div className="text-white  w-[90%] sm:w-[450px] bg-login shadow-black2  h-[70px] 375:px-[40px] px-[20px] rounded-[20px] flex items-center justify-between">
                 <BiSolidHome onClick={() => navigate("/home")} className={`sm:text-[29px] text-[25px] ${location.location === 'home' ? "text-green-700" : "text-white" } hover:text-green-700  cursor-pointer transition-all`}/>
                 <FaPeopleGroup onClick={() => navigate("/barbers")} className={`sm:text-[29px] text-[25px] ${location.location === 'barbers' ? "text-green-700" : "text-white" } cursor-pointer hover:text-green-700 transition-all`} />
