@@ -4,7 +4,6 @@ import { LuSearch } from "react-icons/lu";
 import { BsPersonFill } from "react-icons/bs";
 import { BiSolidHome } from "react-icons/bi";
 import { BsPostageHeartFill } from "react-icons/bs";
-
 function BottomMenu(location)   {
     console.log("location ",    location);
     const navigate = useNavigate();
@@ -28,7 +27,7 @@ function BottomMenu(location)   {
                     <p className='text-[10px] font-bold'>SEARCH</p>
                 </div>
                 <div className='flex flex-col   items-center justify-end h-[50px]'>
-                    <BsPersonFill className="sm:text-[29px] mb-1 text-[25px] cursor-pointer hover:text-green-700 transition-all"/>
+                    <BsPersonFill onClick={() => navigate("/profile")}  className={`sm:text-[29px] mb-1 text-[25px] cursor-pointer ${location.location === 'profile' ? "text-green-700" : "text-white" } hover:text-green-700 transition-all`}/>
                     <p className='text-[10px] font-bold'>PROFILE</p>
                 </div>
             </div>
