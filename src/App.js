@@ -7,8 +7,9 @@ import Home from "./pages/Home";
 import Barbers from "./pages/Barbers";
 import Posts from "./pages/Posts";
 import ProfileBarber from "./pages/ProfileBarber";
-
+import Profile from "./pages/Profile";
 import './styles/App.css';
+
 function App() {
   return (
       <AnimatePresence  mode="wait">
@@ -20,6 +21,7 @@ function App() {
           <Route path="/barbers" element={<AnimateRoute><Barbers /></AnimateRoute>} />
           <Route path="/posts" element={<AnimateRoute><Posts /></AnimateRoute>} />
           <Route path="/profileBarber" element={<AnimateRoute><ProfileBarber /></AnimateRoute>} />
+          <Route path="/profile" element={<AnimateRoute><Profile /></AnimateRoute>} />
         </Routes>
       </AnimatePresence>
   );

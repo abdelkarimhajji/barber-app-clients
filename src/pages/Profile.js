@@ -1,4 +1,6 @@
 
+import NavBar from "../components/NavBar";
+import BottomMenu from "../components/BottomMenu";
 
 function Profile(){
     return (
@@ -6,8 +8,10 @@ function Profile(){
             <div className="bg-customBlue h-full min-h-screen w-full md:w-[100%] lg:w-[1000px] box-border relative ">
                 <NavBar />
                 
-                <BottomMenu location="home"/>
+                <BottomMenu location="profile"/>
             </div>
         </div>
     );
 }
+
+export default Profile;
