@@ -6,6 +6,7 @@ import { FaHeart } from "react-icons/fa";
 import { FaComment } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
+import { FaArrowRightLong } from "react-icons/fa6";
 import styles from "../styles/App.module.css";
 
 function AllPosts(){
@@ -34,19 +35,50 @@ function AllPosts(){
     {
         setOpenCommit(false);
     }
+    const movableDivRef = useRef(null);
+    useEffect(() => {
+        const handleScroll = () => {
+            // console.log("Current scroll position:", window.pageYOffset);
+            // console.log("Current window width:", window.innerWidth); // Log the window width
+            if(window.pageYOffset >= 0 && window.innerWidth > 800)
+                movableDivRef.current.style.top = `${window.pageYOffset - 0}px`;
+            if(window.innerWidth < 800)
+                movableDivRef.current.style.top = `0px`;
+            else if(window.pageYOffset < 0)
+                movableDivRef.current.style.top = `0px`;
+        };
+    
+        // Add the scroll event listener to the window
+        window.addEventListener('scroll', handleScroll);
+    
+        // Remove the event listener when the component unmounts
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []); // Empty dependency array means this effect runs once on mount
     return (
         <>
         
         <div className='w-full flex justify-around'>
-            <div className='w-[300px] h-[600px] bg-login flex flex-col items-center justify-around rounded-xl py-2.5'>
-                <div className='w-[92%] h-[180px] bg-customBlue rounded-xl'>
+            <div ref={movableDivRef} className='w-[300px] h-[595px] bg-login flex flex-col items-center justify-around rounded-xl py-2.5 relative'>
+                <div className='w-[91%] h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
+                    <div className='absolute text-white bottom-[25px] cursor-pointer left-6 bg-red-900 hover:bg-red-700 transition-all duration-500  rounded-xl text-[11px] font-bold flex items-center px-3  py-1'>
+                        <p>By now</p>
+                        <FaArrowRightLong className='ml-3'/>
+                    </div>
                 </div>
-                <div className='w-[92%] h-[180px] bg-customBlue rounded-xl'>
+                <div className='w-[91%] h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
+                    <div className='absolute text-white bottom-[25px] cursor-pointer left-6 bg-red-900 hover:bg-red-700 transition-all duration-500  rounded-xl text-[11px] font-bold flex items-center px-3  py-1'>
+                        <p>By now</p>
+                        <FaArrowRightLong className='ml-3'/>
+                    </div>
                 </div>
-                <div className='w-[92%] h-[180px] bg-customBlue rounded-xl'>
+                <div className='w-[91%] h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
+                    <div className='absolute text-white bottom-[25px] cursor-pointer left-6 bg-red-900 hover:bg-red-700 transition-all duration-500  rounded-xl text-[11px] font-bold flex items-center px-3  py-1'>
+                        <p>By now</p>
+                        <FaArrowRightLong className='ml-3'/>
+                    </div>
                 </div>
             </div>
             <div className="sm:w-[600px] w-[87%] flex  items-center h-auto justify-center flex-col " >
