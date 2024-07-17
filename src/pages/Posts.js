@@ -13,11 +13,7 @@ function Posts(){
                 <NavBar />
                 <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
                 <AllPosts/>
-                <AllPosts/>
-                <AllPosts/>
-                <AllPosts/>
-                <AllPosts/>
-                <AllPosts/>
+                
                 <BottomMenu location="posts"/>
                 <div className='mb-[120px]'>
 

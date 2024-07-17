@@ -38,8 +38,8 @@ function AllPosts(){
     const movableDivRef = useRef(null);
     useEffect(() => {
         const handleScroll = () => {
-            // console.log("Current scroll position:", window.pageYOffset);
-            // console.log("Current window width:", window.innerWidth); // Log the window width
+            console.log("Current scroll position:", window.pageYOffset);
+            console.log("Current window width:", window.innerWidth); // Log the window width
             if(window.pageYOffset >= 0 && window.innerWidth > 800)
                 movableDivRef.current.style.top = `${window.pageYOffset - 0}px`;
             if(window.innerWidth < 800)
