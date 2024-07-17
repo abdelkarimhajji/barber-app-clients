@@ -57,7 +57,7 @@ function AllPosts(){
     return (
         <>
         
-        <div className='w-full 940:flex justify-around'>
+        <div className='w-full 940:flex 940:justify-around '>
             <div ref={movableDivRef} className={`940:w-[300px] w-[100%] 940:h-[595px] h-[180px] 940:mb-0 mb-[50px]  940:px-0 px-[18px] gap-x-5  flex 940:flex-col items-center justify-around 940:rounded-xl overflow-y-scroll  relative ${styles.hideScrollbar}`}>
                 <div className='940:w-[91%] w-[300px] flex-shrink-0 h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
@@ -81,9 +81,9 @@ function AllPosts(){
                     </div>
                 </div>
             </div>
-            <div className="sm:w-[600px] w-[87%] flex  items-center h-auto justify-center flex-col " >
+            <div className="sm:w-[600px] w-[95%] flex  items-center h-auto justify-center flex-col  m-auto " >
                 {/* start post */}
-                <div className="sm:w-[600px]  w-[87%]   h-auto  mb-10 bg-login rounded-xl   " >
+                <div className="sm:w-[600px]  w-[95%]   h-auto  mb-10 bg-login rounded-xl   " >
                     {/* start top of post */}
                     <div className="h-[70px] w-full  flex mb-3">
                         <div className="w-full h-full  flex items-center px-2">
