@@ -8,8 +8,8 @@ function Posts(){
         window.scrollTo(0, 0);
     }, []);
     return (
-        <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
-            <div className="bg-customBlue h-full flex flex-col items-center min-h-screen w-full md:w-[100%] lg:w-[1000px] box-border relative ">
+        <div className="bg-login w-full  min-h-screen h-auto flex justify-center overflow-hidden">
+            <div className="bg-customBlue h-full flex flex-col items-center min-h-screen w-full md:w-[100%] lg:w-[1000px] box-border relative  overflow-hidden">
                 <NavBar />
                 <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
                 <AllPosts/>

@@ -58,8 +58,8 @@ function AllPosts(){
     return (
         <>
         
-        <div className='w-full 940:flex 940:justify-around '>
-            <div ref={movableDivRef} className={`940:w-[300px] w-[100%] 940:h-[535px] h-[180px] 940:mb-0 mb-[50px]  940:px-0 px-[18px] gap-x-5  flex 940:flex-col items-center justify-around 940:rounded-xl overflow-y-scroll  relative ${styles.hideScrollbar}`}>
+        <div className='w-full 940:flex 940:justify-around  bg-red-700'>
+            <div ref={movableDivRef} className={`940:w-[300px] w-[100%] 940:h-[525px] h-auto 940:mb-0 mb-[50px]  940:px-0 px-[18px] gap-x-5  flex 940:flex-col items-center justify-around 940:rounded-xl overflow-y-scroll  relative ${styles.hideScrollbar}`}>
                 <div className='940:w-[91%] w-[300px] flex-shrink-0 940:h-[160px] h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
                     <div className='absolute text-white bottom-[25px] cursor-pointer left-6 bg-red-900 hover:bg-red-700 transition-all duration-500  rounded-xl text-[11px] font-bold flex items-center px-3  py-1'>
