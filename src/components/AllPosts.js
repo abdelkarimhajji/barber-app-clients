@@ -38,7 +38,7 @@ function AllPosts(){
         <>
         
         <div className='w-full bg-red-600 flex justify-around'>
-            <div className='w-[300px] h-[600px] bg-green-50 flex flex-col items-center py-2.5'>
+            <div className='w-[300px] h-[600px] bg-green-50 flex flex-col items-center py-2.5 '>
                 <div className='w-[92%] h-[220px] bg-red-600 rounded-xl'>
 
                 </div>
