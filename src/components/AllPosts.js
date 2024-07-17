@@ -39,12 +39,13 @@ function AllPosts(){
     useEffect(() => {
         const handleScroll = () => {
             console.log("Current scroll position:", window.pageYOffset);
-            console.log("Current window width:", window.innerWidth); // Log the window width
-            if(window.pageYOffset >= 0 && window.innerWidth > 940)
+            // console.log("(window.pageYOffset + window.innerHeight) - 50", (window.pageYOffset + window.innerHeight)); // Log the window width
+            // console.log(" document.body.scrollHeight :", document.body.scrollHeight - 100);
+            if(window.pageYOffset >= 0 && window.innerWidth > 800 )
                 movableDivRef.current.style.top = `${window.pageYOffset - 0}px`;
             if(window.innerWidth < 800)
                 movableDivRef.current.style.top = `0px`;
-            else if(window.pageYOffset < 0)
+            else if(window.pageYOffset <= 0)
                 movableDivRef.current.style.top = `0px`;
         };
     
@@ -58,22 +59,22 @@ function AllPosts(){
         <>
         
         <div className='w-full 940:flex 940:justify-around '>
-            <div ref={movableDivRef} className={`940:w-[300px] w-[100%] 940:h-[595px] h-[180px] 940:mb-0 mb-[50px]  940:px-0 px-[18px] gap-x-5  flex 940:flex-col items-center justify-around 940:rounded-xl overflow-y-scroll  relative ${styles.hideScrollbar}`}>
-                <div className='940:w-[91%] w-[300px] flex-shrink-0 h-[180px] bg-customBlue rounded-xl relative'>
+            <div ref={movableDivRef} className={`940:w-[300px] w-[100%] 940:h-[535px] h-[180px] 940:mb-0 mb-[50px]  940:px-0 px-[18px] gap-x-5  flex 940:flex-col items-center justify-around 940:rounded-xl overflow-y-scroll  relative ${styles.hideScrollbar}`}>
+                <div className='940:w-[91%] w-[300px] flex-shrink-0 940:h-[160px] h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
                     <div className='absolute text-white bottom-[25px] cursor-pointer left-6 bg-red-900 hover:bg-red-700 transition-all duration-500  rounded-xl text-[11px] font-bold flex items-center px-3  py-1'>
                         <p>By now</p>
                         <FaArrowRightLong className='ml-3'/>
                     </div>
                 </div>
-                <div className='940:w-[91%] w-[300px] flex-shrink-0 h-[180px] bg-customBlue rounded-xl relative'>
+                <div className='940:w-[91%] w-[300px] flex-shrink-0 940:h-[160px] h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
                     <div className='absolute text-white bottom-[25px] cursor-pointer left-6 bg-red-900 hover:bg-red-700 transition-all duration-500  rounded-xl text-[11px] font-bold flex items-center px-3  py-1'>
                         <p>By now</p>
                         <FaArrowRightLong className='ml-3'/>
                     </div>
                 </div>
-                <div className='940:w-[91%] w-[300px] flex-shrink-0 h-[180px] bg-customBlue rounded-xl relative'>
+                <div className='940:w-[91%] w-[300px] flex-shrink-0 940:h-[160px] h-[180px] bg-customBlue rounded-xl relative'>
                     <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
                     <div className='absolute text-white bottom-[25px] cursor-pointer left-6 bg-red-900 hover:bg-red-700 transition-all duration-500  rounded-xl text-[11px] font-bold flex items-center px-3  py-1'>
                         <p>By now</p>
