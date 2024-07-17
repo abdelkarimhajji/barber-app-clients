@@ -37,10 +37,16 @@ function AllPosts(){
     return (
         <>
         
-        <div className='w-full bg-red-600 flex justify-around'>
-            <div className='w-[300px] h-[600px] bg-green-50 flex flex-col items-center py-2.5'>
-                <div className='w-[92%] h-[220px] bg-red-600 rounded-xl'>
-
+        <div className='w-full flex justify-around'>
+            <div className='w-[300px] h-[600px] bg-login flex flex-col items-center justify-around rounded-xl py-2.5'>
+                <div className='w-[92%] h-[180px] bg-customBlue rounded-xl'>
+                    <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
+                </div>
+                <div className='w-[92%] h-[180px] bg-customBlue rounded-xl'>
+                    <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
+                </div>
+                <div className='w-[92%] h-[180px] bg-customBlue rounded-xl'>
+                    <img src={beard} alt=""  className='rounded-xl object-cover h-full w-full'/>
                 </div>
             </div>
             <div className="sm:w-[600px] w-[87%] flex  items-center h-auto justify-center flex-col " >
