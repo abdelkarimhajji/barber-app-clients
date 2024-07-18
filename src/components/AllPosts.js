@@ -57,7 +57,7 @@ function AllPosts(){
       }, []); // Empty dependency array means this effect runs once on mount
     return (
         <>
-        
+        <div className="mt-[163px] 324:mt-[165px] 480:mt-[200px]"></div>
         <div className='w-full 940:flex 940:justify-aroun'>
             <div ref={movableDivRef} className={`940:w-[300px] w-[100%] 940:h-[525px] h-auto 940:mb-0 mb-[50px]  940:px-0 px-[18px] gap-x-5  flex 940:flex-col items-center justify-around 940:rounded-xl overflow-y-scroll  relative ${styles.hideScrollbar}`}>
                 <div className='940:w-[91%] w-[300px] flex-shrink-0 940:h-[160px] h-[180px] bg-customBlue rounded-xl relative'>
