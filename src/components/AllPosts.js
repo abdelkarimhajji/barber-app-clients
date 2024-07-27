@@ -258,7 +258,7 @@ function AllPosts(){
                                                 <div className='bg-login w-full z-50 absolute'>
                                                     <p className='z-50'>see all reply</p>
                                                 </div>
-                                                <div  className='absolute sm:h-5 sm:w-9 h-5 570:w-[30px]  w-[70px] border-l-2 border-b-2 border-network rounded-bl-xl top-[-7px] sm:left-[-37px] left-[-27.5px]'></div>
+                                                <div  className='absolute sm:h-5 sm:w-9 h-5 570:w-[30px]  w-[70px] border-l-2 border-b-2 border-network rounded-bl-xl top-[-7px] sm:left-[-37px] 375:left-[-29.5px] left-[-27.5px]'></div>
                                             </div>
                                         </div>
                                        <div className='h-[60px] w-full  flex items-end  justify-end pr-3 pt-2 relative z-10'>
@@ -321,7 +321,7 @@ function AllPosts(){
                                 <div className='flex  w-full min-h-[50px] mb-5 sm:text-md text-sm'>
                                     <div className='w-auto min-h-[50px]'><img src={beard} alt='barber' className='sm:w-[50px] sm:h-[50px] w-[40px] h-[40px] object-cover rounded-full' /></div>
                                     <div className='w-[70%] ml-5 text-white flex items-center sm:pl-3 sm:py-3 py-2 px-2 bg-searchBar rounded-xl'>
-                                        <p>this is my comment ok bro this is my comment ok bro
+                                        <p>ni this is my comment ok bro this is my comment ok bro
                                         this is my comment ok brothis is my comment ok brothis is my comment ok bro
                                         this is my comment ok brothis is my comment ok brothis is my comment ok bro
                                         </p>
