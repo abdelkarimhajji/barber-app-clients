@@ -54,17 +54,15 @@ function Profile(){
                         </div>
                     </div>
                 </div>
-                <div className="w-full h-full 376:px-[30px] px-[10px] ">
-                    {/* <div className="rounded-xl bg-login"> */}
+                <div className="w-full h-full 376:px-[30px] px-[10px] mb-[120px]">
                         <div className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl mb-1 relative cursor-pointer">
                             <p>Appointemnt</p>
-                            <div className="absolute w-6 h-6 bg-white rounded-full right-8 flex items-center justify-center"><MdKeyboardArrowRight className="text-[22px] text-login font-bold"/></div>
+                            <div className="absolute 700:w-10  500:w-7 500:h-7 h-6 w-6  bg-white rounded-full 700:right-[50px] right-8 flex items-center justify-center"><MdKeyboardArrowRight className="text-[22px] text-login font-bold"/></div>
                         </div>
-                        <div className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl">
+                        <div className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl mb-1 relative cursor-pointer">
                             <p>Appointemnt</p>
+                            <div className="absolute 700:w-10  500:w-7 500:h-7 h-6 w-6  bg-white rounded-full 700:right-[50px] right-8 flex items-center justify-center"><MdKeyboardArrowRight className="text-[22px] text-login font-bold"/></div>
                         </div>
-                    {/* </div> */}
-                   
                 </div>
                 <BottomMenu location="profile"/>
             </div>
