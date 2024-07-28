@@ -2,6 +2,8 @@ import {useEffect} from "react";
 import NavBar from "../components/NavBar";
 import BottomMenu from "../components/BottomMenu";
 import { RiEditBoxFill } from "react-icons/ri";
+import { MdKeyboardArrowRight } from "react-icons/md";
+
 function Profile(){
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -11,7 +13,7 @@ function Profile(){
             <div className="bg-customBlue h-full min-h-screen w-full md:w-[100%] lg:w-[1000px] box-border relative ">
                 <NavBar profile="profile"/>
                 <div className="mt-[163px] 324:mt-[110px] 480:mt-[120px]"></div>
-                <div className="w-full h-full 376:px-[30px] px-[10px]">
+                <div className="w-full h-full 376:px-[30px] px-[10px] mb-[20px]">
                     <div className="w-full bg-login 570:h-[400px] overflow-hidden rounded-2xl relative text-white ">
                         <div className="absolute 570:w-[80px] 570:h-[80px]  w-[50px] h-[50px] bg-green-700 right-0 rounded-bl-[100px] flex items-center justify-center 570:text-[30px] text-[20px] text-white"><RiEditBoxFill  className="570:ml-4 ml-2.5 570:mt-[-13px] mt-[-7px] cursor-pointer hover:text-login transition-all duration-300"/></div>
                         <div className="w-full px-[30px] pt-5 500:mb-[50px] mb-[25px]">
@@ -51,6 +53,18 @@ function Profile(){
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className="w-full h-full 376:px-[30px] px-[10px] ">
+                    {/* <div className="rounded-xl bg-login"> */}
+                        <div className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl mb-1 relative cursor-pointer">
+                            <p>Appointemnt</p>
+                            <div className="absolute w-6 h-6 bg-white rounded-full right-8 flex items-center justify-center"><MdKeyboardArrowRight className="text-[22px] text-login font-bold"/></div>
+                        </div>
+                        <div className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl">
+                            <p>Appointemnt</p>
+                        </div>
+                    {/* </div> */}
+                   
                 </div>
                 <BottomMenu location="profile"/>
             </div>
