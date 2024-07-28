@@ -18,9 +18,9 @@ function NavBar(profile){
     }
 
     return(
-        <div className={`${profile.profile === "profile" ? 'h-0' : '480:h-[180px]'}  boxsh bg-customBlue shadow-lg flex flex-col w-full md:w-[100%] lg:w-[1000px] box-border fixed z-50`}>
+        <div className={`${profile.profile === "profile" || "MyAppointment" ? 'h-0' : '480:h-[180px]'}  boxsh bg-customBlue shadow-lg flex flex-col w-full md:w-[100%] lg:w-[1000px] box-border fixed z-50`}>
             {/* start top container  of img and not*/}
-            <div className={`p-5 box-border bg-customBlue flex ${profile.profile === "profile" ? 'shadow-lg' : 'shadow-none'} `}>
+            <div className={`p-5 box-border bg-customBlue flex ${profile.profile === "profile" || "MyAppointment" ? 'shadow-lg' : 'shadow-none'} `}>
                 {/* start container of image and name */}
                 <div className='flex  480:w-1/2 w-[60%]'>
                     <img src={beard} alt=""  className=" object-cover w-[40px] h-[40px] 480:w-[55px] 480:h-[55px] rounded-full"/>
@@ -49,7 +49,7 @@ function NavBar(profile){
             </div>
             {/* end top container of image and not */}
             {/* start container search */}
-            <div className={`w-full  px-5 flex justify-center items-center rounded-xl  ${profile.profile === "profile" ? 'hidden' : 'block'}`}>
+            <div className={`w-full  px-5 flex justify-center items-center rounded-xl  ${profile.profile === "profile" || "MyAppointment" ? 'hidden' : 'block'}`}>
                 <div className=' w-full   h-[35px] 480:h-[50px]  flex rounded-xl  mb-6 480:mb-0  480:mt-[16px]  480:mb-none'>
                     <div className='h-full w-full relative'>
                         <LuSearch className='absolute text-white top-2 480:top-1.5 left-3 text-[20px] 480:text-[30px]'/>

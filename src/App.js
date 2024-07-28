@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Barbers from "./pages/Barbers";
 import Posts from "./pages/Posts";
 import ProfileBarber from "./pages/ProfileBarber";
+import MyAppointment from "./pages/MyAppointment";
 import Profile from "./pages/Profile";
 import './styles/App.css';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/posts" element={<AnimateRoute><Posts /></AnimateRoute>} />
           <Route path="/profileBarber" element={<AnimateRoute><ProfileBarber /></AnimateRoute>} />
           <Route path="/profile" element={<AnimateRoute><Profile /></AnimateRoute>} />
+          <Route path="/myAppointment" element={<AnimateRoute><MyAppointment /></AnimateRoute>} />
         </Routes>
       </AnimatePresence>
   );

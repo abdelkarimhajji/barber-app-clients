@@ -1,4 +1,5 @@
-import {useEffect} from "react";    
+import {useEffect} from "react";
+import {useNavigate} from 'react-router-dom';
 import NavBar from "../components/NavBar";
 import BottomMenu from "../components/BottomMenu";
 import { RiEditBoxFill } from "react-icons/ri";
@@ -8,6 +9,7 @@ function Profile(){
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    const navigate = useNavigate();
     return (
         <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
             <div className="bg-customBlue h-full min-h-screen w-full md:w-[100%] lg:w-[1000px] box-border relative ">
@@ -55,12 +57,12 @@ function Profile(){
                     </div>
                 </div>
                 <div className="w-full h-full 376:px-[30px] px-[10px] mb-[120px]">
-                        <div className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl mb-1 relative cursor-pointer">
-                            <p>Appointemnt</p>
+                        <div onClick={() => navigate("/MyAppointment")} className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl mb-1 relative cursor-pointer">
+                            <p>My Appointemnt</p>
                             <div className="absolute 700:w-10  500:w-7 500:h-7 h-6 w-6  bg-white rounded-full 700:right-[50px] right-8 flex items-center justify-center"><MdKeyboardArrowRight className="text-[22px] text-login font-bold"/></div>
                         </div>
                         <div className="h-[80px] text-white flex items-center pl-[30px] bg-login rounded-xl mb-1 relative cursor-pointer">
-                            <p>Appointemnt</p>
+                            <p>My Favorite Doctor</p>
                             <div className="absolute 700:w-10  500:w-7 500:h-7 h-6 w-6  bg-white rounded-full 700:right-[50px] right-8 flex items-center justify-center"><MdKeyboardArrowRight className="text-[22px] text-login font-bold"/></div>
                         </div>
                 </div>
