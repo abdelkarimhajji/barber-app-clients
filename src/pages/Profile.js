@@ -13,13 +13,13 @@ function Profile(){
                 <div className="mt-[163px] 324:mt-[165px] 480:mt-[120px]"></div>
                 <div className="w-full h-full px-[30px]">
                     <div className="w-full bg-login h-[400px] overflow-hidden rounded-2xl relative text-white ">
-                        <div className="absolute w-[100px] h-[100px] bg-green-700 right-0 rounded-bl-[100px] flex items-center justify-center text-[35px] text-white"><RiEditBoxFill  className="ml-4 mt-[-13px] cursor-pointer hover:text-login transition-all duration-300"/></div>
+                        <div className="absolute w-[80px] h-[80px] bg-green-700 right-0 rounded-bl-[100px] flex items-center justify-center text-[30px] text-white"><RiEditBoxFill  className="ml-4 mt-[-13px] cursor-pointer hover:text-login transition-all duration-300"/></div>
                         <div className="w-full px-[30px] pt-5 mb-[50px]">
                             <p className="font-bold text-[20px]">Personal Info</p>
                         </div>
-                        <div className="w-full h-full px-[100px] flex">
-                            <div className="  w-1/2">
-                                <div className="mb-[30px]">
+                        <div className="w-full h-full 600:px-[100px] px-[60px] flex">
+                            <div className="w-1/2">
+                                <div className="mb-[30px] ">
                                     <p className="font-bold text-xl mb-2">Full Name</p>
                                     <p className="text-[16px] ml-1">Abdelkarim Hajji</p>
                                 </div>
@@ -28,11 +28,12 @@ function Profile(){
                                     <p className="text-[16px] ml-1">Male</p>
                                 </div>
                                 <div>
-                                    <p className="font-bold text-xl mb-2">E-mail</p>
+                                    <p className="font-bold text-xl mb-2 overflow-hidden">E-mail</p>
                                     <p className="text-[16px] ml-1">hajjikarim530@gmail.com</p>
                                 </div>
                             </div>
-                            <div className=" w-1/2">
+                            <div className=" w-1/2 flex flex-col  700:items-center items-end">
+                            <div>
                                 <div className="mb-[30px]">
                                     <p className="font-bold text-xl mb-2">Date of Birth</p>
                                     <p className="text-[16px] ml-1">2001/04/20</p>
@@ -45,6 +46,8 @@ function Profile(){
                                     <p className="font-bold text-xl mb-2">Location</p>
                                     <p className="text-[16px] ml-1">Tangier</p>
                                 </div>
+                            </div>
+                                
                             </div>
                         </div>
                     </div>
