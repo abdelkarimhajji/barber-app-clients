@@ -17,6 +17,7 @@ module.exports = {
       },
       colors: {
         customBlue: '#212529',
+        customBlueHover: '#272a2d',
         transparent: '#17181ccf',
         transparent2: '#17181c95',
         login: '#101418',

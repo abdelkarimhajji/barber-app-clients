@@ -9,8 +9,8 @@ function MyAppointment()
                 <NavBar profile="MyAppointment"/>
                 <div className='pt-[100px]'></div>
 
-                <div className="w-full h-[70px] mb-[50px] text-white font-bold text-lg bg-customBlue shadow-lg border-t-[2px]  flex" style={{borderColor: "#2d3135"}}>
-                    <div className="w-1/2 flex items-center justify-center border-r-[2px]  cursor-pointer" style={{borderColor: "#2d3135"}}>current</div>
+                <div className="w-full h-[70px] mb-[50px] text-white font-bold text-lg bg-customBlue shadow-lg  flex" style={{borderColor: "#2d3135"}}>
+                    <div className="w-1/2 flex items-center justify-center bg-customBlueHover  cursor-pointer" style={{borderColor: "#2d3135"}}>current</div>
                     <div className="w-1/2 flex items-center justify-center cursor-pointer">past</div>
                 </div>
                 <div className="px-[70px] w-full flex gap-x-10">
