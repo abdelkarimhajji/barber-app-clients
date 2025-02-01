@@ -101,7 +101,7 @@ function AllPosts(){
                     {/* end top of post */}
 
                     {/* start content of  post*/}
-                    <div className="text-gray mb-3 px-6"><p ref={elementRef}>{  displayMore === true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer text-green-700 hover:text-green-900 transition-all'> More</span></> }</p></div>
+                    <div className="text-gray mb-3 px-6"><p ref={elementRef}>{displayMore === true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer text-green-700 hover:text-green-900 transition-all'> More</span></> }</p></div>
                     <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                         <img
                             src={beard} 
@@ -148,16 +148,6 @@ function AllPosts(){
                 
                         
                         
-
-
-
-
-
-
-
-
-
-
 
 
 

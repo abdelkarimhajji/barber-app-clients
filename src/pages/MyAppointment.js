@@ -36,8 +36,9 @@ function MyAppointment()
                             <p className={`text-white ml-6  flex items-center flex-shrink-0 `}><IoIosPersonAdd className='text-green-600  480:text-[15px]'/><span className='text-[12px] ml-1'>1,500</span></p>
                             <p className={`text-white ml-6  flex items-center flex-shrink-0`}><MdRateReview className='text-green-600 480:text-[15px]'/><span className='text-[12px] ml-1'>1,500</span></p>
                         </div>  
-                        <div className='w-[100%]   flex justify-center items-end'>
-                            <button type="button" className='text-white text-sm bg-green-700 py-2 mb-3 overflow-hidden sm:px-10 w-[80%] sm:w-auto rounded-xl'>2024/08/20 : 24:45</button>
+                        <div className='w-[100%]   flex flex-col justify-end  items-center'>
+                            <button type="button" className='text-white text-sm  bg-green-700 py-2 mb-3 overflow-hidden sm:px-10 w-[80%] sm:w-[70%] rounded-xl'>2024/08/20 : 24:45</button>
+                            <button type="button" className='text-white text-sm bg-red-800 py-2 mb-3 overflow-hidden sm:px-10 w-[80%] sm:w-[70%] rounded-xl'>Cancel</button>
                         </div>
                     </div>
                 
@@ -50,3 +51,4 @@ function MyAppointment()
 }
 
 export default MyAppointment;
+// +212 673-180012
