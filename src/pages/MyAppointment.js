@@ -1,9 +1,9 @@
-import {useEffect} from "react";
+// import {useEffect} from "react";
 import NavBar from "../components/NavBar";
 import BottomMenu from "../components/BottomMenu";
-import beard from "../imgs/beard.jpg";
+// import beard from "../imgs/beard.jpg";
 import beard3 from '../imgs/barber2.avif';
-import beard2 from '../imgs/images.jpeg';
+// import beard2 from '../imgs/images.jpeg';
 import { FaHeart } from "react-icons/fa";
 import { MdRateReview } from "react-icons/md";
 import { IoIosPersonAdd } from "react-icons/io";

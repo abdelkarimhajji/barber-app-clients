@@ -14,7 +14,7 @@ function NavBar(profile){
 
     // this function is used to delete the last charachter in the input of search
     function deleteCharachter(){
-        setValue(value.slice(0, -1));
+        setValue('');
     }
 
     return(

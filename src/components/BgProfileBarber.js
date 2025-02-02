@@ -48,7 +48,7 @@ function BgProfileBarber(){
                             <IoMdHeartDislike className="" /> <span className="ml-2">Like</span>
                         </button>
                     </div>
-                    <div className="flex absolute 800:right-16 800:bottom-[-50px] bottom-[-100px] bg-red-100 rounded-xl justify-center items-center w-[260px]">
+                    <div className="flex absolute 800:right-16 800:bottom-[-50px] bottom-[-100px] bg-red-100 rounded-2xl justify-center items-center w-[260px]">
                         <button type="button" className="w-full py-1.5 rounded-xl bg-green-800 flex justify-center items-center ">
                             <IoCalendarSharp className="" /> <span className="ml-2">Appointment</span>
                         </button>

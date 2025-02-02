@@ -101,7 +101,7 @@ function AllPosts(){
                     {/* end top of post */}
 
                     {/* start content of  post*/}
-                    <div className="text-gray mb-3 px-6"><p ref={elementRef}>{displayMore === true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer text-green-700 hover:text-green-900 transition-all'> More</span></> }</p></div>
+                    <div className="text-gray mb-3 px-6 text-[13px]"><p ref={elementRef}>{displayMore === true ? text2 :<> {text}<span onClick={() => setDisplayMore(true)} className='cursor-pointer text-green-700 hover:text-green-900 transition-all'> More</span></> }</p></div>
                     <div className={`px-5 w-full  max-h-[500px] mb-5 flex justify-center `}>                
                         <img
                             src={beard} 
@@ -112,12 +112,12 @@ function AllPosts(){
                     {/* end content of  post*/}
 
                     {/* start how actions in your post */}
-                    <div className="px-6 mb-3 flex">
-                        <div className="flex items-center justify-start w-1/2 md:text-[15.5px] text-[13.5px]">
+                    <div className="relative px-6 mb-5 flex before:content-[''] before:absolute before:bottom-[-10px] before:left-[5%] before:w-[90%]  before:border before:border-gray">
+                        <div className="flex items-center justify-start w-1/2 md:text-[13.5px] text-[13.5px]">
                             <FaHeart className=" cursor-pointer text-red-800"/>
                             <p className="text-white ml-2">30.000</p>
                         </div>
-                        <div className="flex items-center justify-end w-1/2 md:text-[15.5px] text-[13.5px]">
+                        <div className="flex items-center justify-end w-1/2 md:text-[13.5px] text-[13.5px]">
                             <p className="text-white">193 comments</p>
                             {/* <p className="text-white ml-2">50 share</p> */}
                         </div>
@@ -125,7 +125,7 @@ function AllPosts(){
                     {/* end how actions in your post */}
 
                     {/* start reaction */}
-                    <div className="text-white sm:px-[70px] px-6 flex mb-5 sm:text-[17.5px] text-[15px]">
+                    <div className="text-white sm:px-[70px] px-6 flex mb-3 sm:text-[15px] text-[15px]">
                         <div className="flex items-center justify-center text-gray w-1/2 rounded-xl cursor-pointer transition-all hover:bg-customBlue">
                             <FaHeart className=" cursor-pointer"/>
                             <p className="ml-2">Like</p>
