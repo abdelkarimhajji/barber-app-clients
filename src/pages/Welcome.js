@@ -27,8 +27,7 @@ function Welcome() {
                         <div className=" h-[600px]   w-full box-border overflow-hidden flex flex-col   justify-center ">
                             <div className=" w-full h-auto  flex flex-col items-center box-border pl-[30px] pr-[80px] ">
                                 <h3 className="text-5xl font-bold mb-6 text-center ">Welcome back!</h3>
-                                <p className="ml-2 text-lg tracking-wide mb-6 text-center">Get access to your Orders, Wishlist and Recommendations,
-                                     Get access to your Orders, Wishlist and Recommendations.</p>
+                                <p className="ml-2 text-lg tracking-wide mb-6 text-center">Manage your bookings, explore styles, discover top barbers, track your history, and enjoy a seamless grooming experience!.</p>
                                 <button type="button" className="bg-green-800 hover:bg-green-900  ml-3 py-3.5 w-[300px] rounded-xl  transition-all ">Watch Demo</button>
                             </div>
                         </div>
@@ -44,8 +43,8 @@ function Welcome() {
                         <h1 className="font-semibold font-signature tracking-widest text-2xl mb-1">7ala9</h1>
                         <p className="text-sm  tracking-widest text-gray">Choose the Barber</p>
                     </div>
-                    <h2 className="text-3xl xsm:text-3xl font-medium tracking-wide text-center mb-6">Healthy Food, For <br />Breakfast</h2>
-                    <p className=" text-sm sm:text-base  text-center   tracking-wide text-gray mb-[20px] ">Lorem ipsum dolor sit amet, consectetur  <br />adipiscing elit, sed do eiusmod tempor</p>
+                    <h2 className="text-3xl xsm:text-3xl font-medium tracking-wide text-center mb-6">Book Your Barber <br />Get the Perfect Cut!</h2>
+                    <p className=" text-sm sm:text-base  text-center   tracking-wide text-gray mb-[20px] ">Get the perfect haircut! Pick your barber <br />book your appointment now!</p>
                     <p className='lg:mb-[50px]  lg:block hidden text-sm'>Choose Your Choice !</p>
                     <button type="button" className="bg-green-800 hover:bg-green-900 transition-all py-3 rounded-xl px-5 lg:hidden mb-[40px] sm:mb-[80px] text-sm">Watch Demo</button>
                     <div className="flex flex-col  justify-center w-full items-center">

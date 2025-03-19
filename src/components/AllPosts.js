@@ -1,4 +1,6 @@
 import {useState , useRef, useEffect} from 'react';
+import axios from 'axios';
+
 import beard from '../imgs/beard.jpg';
 // import image from '../imgs/images1.jpeg';
 // import image2 from '../imgs/image2.jpg';
@@ -16,6 +18,8 @@ function AllPosts(){
     const [displayMore, setDisplayMore] = useState(false);
     const text2 = "hi this is my first post hello first post hello first post hellofirst post hello    !!! hi this is my first post hello !!!hi this is my first";
     const [text, setText] = useState("")
+    const [message, setMessage] = useState("");
+
 
     useEffect(() => {
         if (text2.length > 46) {
@@ -24,7 +28,16 @@ function AllPosts(){
         }
     }, []); 
 
-
+    useEffect(() => {
+        axios.get("http://localhost:8080/") // Make sure the URL matches your Spring Boot app's port
+          .then(response => {
+            setMessage(response.data);
+            console.log("this is the data ok from spring boot : ", response.data) // Set the response data to message state
+          })
+          .catch(error => {
+            console.error("Error fetching data", error); // Log any error
+          });
+      }, []); // Empty dependency array means this runs once when the component mounts    
 
     function clickComment()
     {
@@ -118,7 +131,7 @@ function AllPosts(){
                             <p className="text-white ml-2">30.000</p>
                         </div>
                         <div className="flex items-center justify-end w-1/2 md:text-[13.5px] text-[13.5px]">
-                            <p className="text-white">193 comments</p>
+                            <p className="text-white">193 comments {message}</p>
                             {/* <p className="text-white ml-2">50 share</p> */}
                         </div>
                     </div>
