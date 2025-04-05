@@ -8,7 +8,7 @@ function BottomMenu(location)   {
     console.log("location ",    location);
     const navigate = useNavigate();
     return (
-        <div className="fixed bottom-0 w-full  md:w-[100%] lg:w-[1000px] sm:h-[100px]  h-[85px] z-40 flex justify-center items-start">
+        <div className="fixed bottom-0 left-0 w-full  md:w-[100%] lg:w-[100%] sm:h-[100px]  h-[85px] z-40 flex justify-center items-star">
             <div className="text-white  w-[95%] 480:w-[80%]  sm:w-[450px] bg-login shadow-black2  sm:h-[80px] h-[70px] 480:px-[40px] px-[25px] rounded-xl flex items-center justify-between">
                 <div className='flex flex-col  items-center justify-end h-[50px]'>
                     <BiSolidHome onClick={() => navigate("/home")} className={`sm:text-[29px] mb-1  text-[25px] ${location.location === 'home' ? "text-green-700" : "text-white" } hover:text-green-700  cursor-pointer transition-all`}/>

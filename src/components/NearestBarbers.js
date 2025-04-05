@@ -10,8 +10,8 @@ function NearestBarbers(){
     return (
         <div className="w-full px-5 ">
             <div className="pl-3"><p className="font-extrabold text-xl text-green-600 mb-6">Nearest Barbers</p></div>
-            <div className=" mb-10 w-full 400:grid grid-cols-2  md:grid-cols-3  gap-x-4 480:gap-x-2   400:gap-y-3">
-                <div className="  w-[100%] 400:w-[100%]  sm:h-[320px] h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px] 400:mb-0">
+            <div className="mb-10 w-full grid gap-x-4 gap-y-3 grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))]">
+                <div className="w-full h-[320px] shadow-black2 rounded-[20px] mx-auto flex flex-col items-center mb-[20px]">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
                         <img src={beard3} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         {/* <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 hover:bg-green-800 transition-all duration-500 text-[12px] text-white font-bold flex items-center justify-center'>Open</div> */}
@@ -30,7 +30,7 @@ function NearestBarbers(){
                         <button type="button" className='text-white text-sm bg-green-700 hover:bg-green-800 transition-all duration-500 py-2 mb-3 overflow-hidden sm:px-10 w-[80%] sm:w-auto rounded-xl'>Make Appointment</button>
                     </div>
                 </div>
-                <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
+                <div className="w-full h-[320px] shadow-black2 rounded-[20px] mx-auto flex flex-col items-center mb-[20px]">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
                         <img src={beard2} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 hover:bg-green-800 transition-all duration-500 text-[12px] text-white font-bold flex items-center justify-center'>Open</div>
@@ -49,7 +49,7 @@ function NearestBarbers(){
                         <button type="button" className='text-white text-sm mb-3 overflow-hidden bg-green-700 hover:bg-green-800 transition-all duration-500 py-2 sm:px-10 w-[80%] sm:w-auto rounded-xl'>Make Appointment</button>
                     </div>
                 </div>
-                <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
+                <div className="w-full h-[320px] shadow-black2 rounded-[20px] mx-auto flex flex-col items-center mb-[20px]">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
                         <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         {/* <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 hover:bg-green-800 transition-all duration-500 text-[12px] text-white font-bold flex items-center justify-center'>Open</div> */}
@@ -68,7 +68,7 @@ function NearestBarbers(){
                         <button type="button" className='text-white text-sm mb-3 overflow-hidden bg-green-700 hover:bg-green-800 transition-all duration-500 py-2 sm:px-10 w-[80%] sm:w-auto rounded-xl'>Make Appointment</button>
                     </div>
                 </div>
-                <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
+                <div className="w-full h-[320px] shadow-black2 rounded-[20px] mx-auto flex flex-col items-center mb-[20px]">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
                         <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 hover:bg-green-800 transition-all duration-500 text-[12px] text-white font-bold flex items-center justify-center'>Open</div>
@@ -87,7 +87,7 @@ function NearestBarbers(){
                         <button type="button" className='text-white text-sm mb-3 overflow-hidden bg-green-700 hover:bg-green-800 transition-all duration-500 py-2 sm:px-10 w-[80%] sm:w-auto rounded-xl'>Make Appointment</button>
                     </div>
                 </div>
-                <div className="  w-[100%] 400:w-[100%]  h-[320px] shadow-black2 rounded-[20px]  mx-auto  flex flex-col items-center mb-[20px]  400:mb-0">
+                <div className="w-full h-[320px] shadow-black2 rounded-[20px] mx-auto flex flex-col items-center mb-[20px]">
                     <div className="w-full h-[45%] rounded-t-[20px] relative z-0 overflow-hidden">
                         <img src={beard} alt=""  className="w-full h-full object-cover rounded-t-[20px]"/>
                         {/* <div className='absolute top-5 left-4 rounded-xl py-[0.6px] px-[7px] bg-green-700 hover:bg-green-800 transition-all duration-500 text-[12px] text-white font-bold flex items-center justify-center'>Open</div> */}

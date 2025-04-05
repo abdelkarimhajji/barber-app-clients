@@ -13,8 +13,8 @@ function Home(){
     }, []);
 
     return(
-        <div className="bg-login w-full  min-h-screen h-auto flex justify-center">
-            <div className="bg-customBlue h-full min-h-screen w-full md:w-[100%] lg:w-[1000px] box-border relative ">
+        <div className="bg-customBlue  w-full  min-h-screen h-auto flex justify-center">
+            <div className="bg-customBlue h-full min-h-screen w-full md:w-[100%] box-border relative  lg:w-[1050px]  1200:w-[1200px] 1300:w-[1300px] 1400:w-[1400px]" >
                 <NavBar />
                 <Ads />
                 <TopBarbers/>
